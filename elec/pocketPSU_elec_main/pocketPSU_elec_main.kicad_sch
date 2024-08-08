@@ -5,6 +5,27 @@
 	(uuid "439011d5-4dd5-4d65-a9bd-b0be402d54a5")
 	(paper "A4")
 	(lib_symbols)
+	(bus
+		(pts
+			(xy 83.82 157.48) (xy 106.68 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b3c615dc-eb3f-4365-8948-c0b2866bef3b")
+	)
+	(label "{SPI_MOSI SPI_MISO SPI_SCK SPI_CS SPI_DC SPI_RESET}"
+		(at 88.9 157.48 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "41d09ec1-fb56-439a-854d-d521ffbf044f")
+	)
 	(sheet
 		(at 224.79 119.38)
 		(size 31.75 21.59)
@@ -158,7 +179,7 @@
 		)
 	)
 	(sheet
-		(at 25.4 102.87)
+		(at 25.4 76.2)
 		(size 48.26 34.29)
 		(fields_autoplaced yes)
 		(stroke
@@ -170,7 +191,7 @@
 		)
 		(uuid "725044cc-ecb2-459a-b2bb-596cb099bd1f")
 		(property "Sheetname" "microcontroller"
-			(at 25.4 102.1584 0)
+			(at 25.4 75.4884 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -179,7 +200,7 @@
 			)
 		)
 		(property "Sheetfile" "microcontroller.kicad_sch"
-			(at 25.4 137.7446 0)
+			(at 25.4 111.0746 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -357,8 +378,8 @@
 		)
 	)
 	(sheet
-		(at 25.4 151.13)
-		(size 46.99 25.4)
+		(at 25.4 123.19)
+		(size 58.42 41.91)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -369,7 +390,7 @@
 		)
 		(uuid "cbe29d96-4bd9-4dd2-be02-96003f32f1da")
 		(property "Sheetname" "user_interface"
-			(at 25.4 150.4184 0)
+			(at 25.4 122.4784 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -378,13 +399,113 @@
 			)
 		)
 		(property "Sheetfile" "user_interface.kicad_sch"
-			(at 25.4 177.1146 0)
+			(at 25.4 165.6846 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
 			)
+		)
+		(pin "SCREEN_BACKLIGHT_EN" input
+			(at 83.82 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "971e8caa-9d7d-4d84-8b99-cc07a60605e6")
+		)
+		(pin "{SPI_MOSI SPI_MISO SPI_SCK SPI_CS SPI_DC SPI_RESET}" input
+			(at 83.82 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "073d3307-83cd-4009-ba8f-3863714bcf38")
+		)
+		(pin "GND" input
+			(at 83.82 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "4ac41cab-9cab-46fa-878a-f0efcd0f256b")
+		)
+		(pin "+3.3V" input
+			(at 83.82 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "8b23757f-eb6f-4a9e-a675-d96f38c6a5f1")
+		)
+		(pin "ENCODER_BT" input
+			(at 83.82 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "fd390ff4-d196-48c3-93f6-abff6c0808d4")
+		)
+		(pin "ENCODER_A" input
+			(at 83.82 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "0b179ed7-327c-4b37-9cda-f149fa080f22")
+		)
+		(pin "BT_3" input
+			(at 83.82 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "5c395918-d5b9-4e93-8b22-3f149dffea60")
+		)
+		(pin "BT_2" input
+			(at 83.82 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "4245afed-416a-4856-be14-2e2d844100bb")
+		)
+		(pin "BT_1" input
+			(at 83.82 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "7fdac2fd-498d-4ac0-a73a-245b849f37b1")
+		)
+		(pin "ENCODER_B" input
+			(at 83.82 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "a48c4574-28be-46a0-a275-3baa96aab9c9")
 		)
 		(instances
 			(project "pocketPSU_elec_main"
