@@ -29,6 +29,8 @@ fp-info-cache
 *.xml
 *.csv
 
+
+# Macos things
 build/
 .DS_Store
 
