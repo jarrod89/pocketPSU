@@ -1,19 +1,36 @@
 # pocketPSU
 
-## Specs  
-Output1:  
+## Specs
+
+### Power outputs
+Output1 / Battery input:
 - efuse protected USBPD output
 - 3A, 30V
 - Use when paired with a PPS capable supply for charging batteries or general supply output
-  
-Output2:  
+
+Output2 (optional):
 - buck-boost output
 - 1A 0-60V
 
-Output3:  
+Output3:
 - LDO output for low ripple
 - 1A 0-60V (limited current based on input/output delta)
 
+### User interface
+
+The user interface will consist of:
+
+- One LCD screen
+- One rotary encode + integrated switch. The switch could serve as a way to switch between fine and coarse setting
+- One button to turn the power output on/off
+- Three buttons for navigation:
+  - Up
+  - Down
+  - Select
+
+### Powering the PSU
+
+The supply can be powered over USB-C or using an external battery. The battery could potentially be a power tool battery that users already have on hand.
 
 ## LCD ato code for reference:
 
