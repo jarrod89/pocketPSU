@@ -3784,7 +3784,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 54.61 40.64 0)
 			(effects
 				(font
@@ -3854,7 +3854,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 236.22 143.51 0)
 			(effects
 				(font
@@ -4122,7 +4122,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 45.72 144.78 0)
 			(effects
 				(font
@@ -4612,7 +4612,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 82.55 151.13 0)
 			(effects
 				(font
@@ -4682,7 +4682,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 220.98 125.73 0)
 			(effects
 				(font
@@ -4734,7 +4734,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4bf12219-8df3-40ab-9e6f-2cc6ddfbb6a8")
-		(property "Reference" "SW5"
+		(property "Reference" "BTON1"
 			(at 259.08 134.62 0)
 			(effects
 				(font
@@ -4801,7 +4801,7 @@
 		(instances
 			(project "pocketPSU_elec_main"
 				(path "/439011d5-4dd5-4d65-a9bd-b0be402d54a5/cbe29d96-4bd9-4dd2-be02-96003f32f1da"
-					(reference "SW5")
+					(reference "BTON1")
 					(unit 1)
 				)
 			)
@@ -4835,7 +4835,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 198.12 143.51 0)
 			(effects
 				(font
@@ -4887,7 +4887,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5b38d06a-4fe4-470c-ae02-a5f9df549756")
-		(property "Reference" "SW3"
+		(property "Reference" "BTDOWN1"
 			(at 182.88 134.62 0)
 			(effects
 				(font
@@ -4954,7 +4954,7 @@
 		(instances
 			(project "pocketPSU_elec_main"
 				(path "/439011d5-4dd5-4d65-a9bd-b0be402d54a5/cbe29d96-4bd9-4dd2-be02-96003f32f1da"
-					(reference "SW3")
+					(reference "BTDOWN1")
 					(unit 1)
 				)
 			)
@@ -4988,7 +4988,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 158.75 143.51 0)
 			(effects
 				(font
@@ -5322,7 +5322,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 88.9 154.94 0)
 			(effects
 				(font
@@ -5392,7 +5392,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 64.77 115.57 0)
 			(effects
 				(font
@@ -5726,7 +5726,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 53.34 125.73 0)
 			(effects
 				(font
@@ -5796,7 +5796,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 176.53 71.12 0)
 			(effects
 				(font
@@ -5866,7 +5866,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 143.51 125.73 0)
 			(effects
 				(font
@@ -6002,7 +6002,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 88.9 144.78 0)
 			(effects
 				(font
@@ -6054,7 +6054,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "aacb5b7a-8362-4de7-b1d7-d38200652c70")
-		(property "Reference" "SW4"
+		(property "Reference" "BTSELECT1"
 			(at 220.98 134.62 0)
 			(effects
 				(font
@@ -6121,7 +6121,7 @@
 		(instances
 			(project "pocketPSU_elec_main"
 				(path "/439011d5-4dd5-4d65-a9bd-b0be402d54a5/cbe29d96-4bd9-4dd2-be02-96003f32f1da"
-					(reference "SW4")
+					(reference "BTSELECT1")
 					(unit 1)
 				)
 			)
@@ -6155,7 +6155,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 182.88 125.73 0)
 			(effects
 				(font
@@ -6225,7 +6225,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 45.72 156.21 0)
 			(effects
 				(font
@@ -6493,7 +6493,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 259.08 125.73 0)
 			(effects
 				(font
@@ -6627,7 +6627,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 52.07 151.13 0)
 			(effects
 				(font
@@ -6745,7 +6745,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d8d298e8-0fff-4154-a86a-1107b1617b08")
-		(property "Reference" "SW2"
+		(property "Reference" "BTUP1"
 			(at 143.51 134.62 0)
 			(effects
 				(font
@@ -6812,7 +6812,7 @@
 		(instances
 			(project "pocketPSU_elec_main"
 				(path "/439011d5-4dd5-4d65-a9bd-b0be402d54a5/cbe29d96-4bd9-4dd2-be02-96003f32f1da"
-					(reference "SW2")
+					(reference "BTUP1")
 					(unit 1)
 				)
 			)
@@ -7229,7 +7229,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 274.32 143.51 0)
 			(effects
 				(font
