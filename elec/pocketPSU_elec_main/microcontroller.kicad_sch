@@ -1788,6 +1788,12 @@
 		)
 	)
 	(junction
+		(at 93.98 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "02749598-71d7-4314-86df-a144593eacf3")
+	)
+	(junction
 		(at 171.45 35.56)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1941,6 +1947,16 @@
 	)
 	(wire
 		(pts
+			(xy 140.97 83.82) (xy 140.97 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f38f606-cbca-4f6c-b302-4535bd5b732c")
+	)
+	(wire
+		(pts
 			(xy 109.22 68.58) (xy 116.84 68.58)
 		)
 		(stroke
@@ -1978,6 +1994,16 @@
 			(type default)
 		)
 		(uuid "4a4632fa-8026-41d5-820e-2d77c33afe3f")
+	)
+	(wire
+		(pts
+			(xy 87.63 34.29) (xy 90.17 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4bc08a9c-5e90-4272-81d5-fb19d9d9fc83")
 	)
 	(wire
 		(pts
@@ -2021,6 +2047,26 @@
 	)
 	(wire
 		(pts
+			(xy 111.76 66.04) (xy 116.84 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "719206f4-11cf-4a83-8f72-9d970ca90be9")
+	)
+	(wire
+		(pts
+			(xy 130.81 83.82) (xy 130.81 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "721d1c68-aa43-45ab-8ce6-211fe67d55a4")
+	)
+	(wire
+		(pts
 			(xy 86.36 43.18) (xy 86.36 50.8)
 		)
 		(stroke
@@ -2031,23 +2077,23 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 83.82) (xy 135.89 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "735f5dd4-cc72-4978-8707-d0e6bf3e8d7a")
-	)
-	(wire
-		(pts
 			(xy 111.76 55.88) (xy 116.84 55.88)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "75f26dcc-85bc-4975-8aec-fe947c4314d3")
+		(uuid "7479774b-17d5-486d-82d2-d9b7901fc427")
+	)
+	(wire
+		(pts
+			(xy 90.17 34.29) (xy 90.17 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "74eaf0d5-3f14-4ea8-8b4d-1faf412453bd")
 	)
 	(wire
 		(pts
@@ -2081,6 +2127,26 @@
 	)
 	(wire
 		(pts
+			(xy 90.17 38.1) (xy 93.98 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9370829c-3fdd-45c5-89d4-55bd49ac5ceb")
+	)
+	(wire
+		(pts
+			(xy 93.98 38.1) (xy 93.98 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9dd49b69-838b-48cc-82b5-f277bc8b141c")
+	)
+	(wire
+		(pts
 			(xy 110.49 38.1) (xy 116.84 38.1)
 		)
 		(stroke
@@ -2098,26 +2164,6 @@
 			(type default)
 		)
 		(uuid "a2fb36c5-fc7d-4d21-97f6-620f44b56f40")
-	)
-	(wire
-		(pts
-			(xy 130.81 83.82) (xy 130.81 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a947e22c-ee4b-43d4-8145-433d5f721443")
-	)
-	(wire
-		(pts
-			(xy 133.35 83.82) (xy 133.35 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ab8e2106-1073-4bdb-92ed-a2d643f36911")
 	)
 	(wire
 		(pts
@@ -2261,6 +2307,16 @@
 	)
 	(wire
 		(pts
+			(xy 135.89 83.82) (xy 135.89 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e4ea6fff-fa3a-4be4-8d89-7341040f7f70")
+	)
+	(wire
+		(pts
 			(xy 40.64 44.45) (xy 40.64 46.99)
 		)
 		(stroke
@@ -2281,7 +2337,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 36.83) (xy 93.98 43.18)
+			(xy 93.98 36.83) (xy 93.98 38.1)
 		)
 		(stroke
 			(width 0)
@@ -2329,6 +2385,25 @@
 		)
 		(uuid "fdf24c73-af1e-4e75-8b1d-b25082a9fe30")
 	)
+	(text_box "Hooking up the screen according to this guide: https://randomnerdtutorials.com/esp32-tft-touchscreen-display-2-8-ili9341-arduino/\n"
+		(exclude_from_sim no)
+		(at 143.51 113.03 0)
+		(size 91.44 7.62)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "f936128b-2aee-4ebd-ba70-3132ccaad256")
+	)
 	(hierarchical_label "BT_3"
 		(shape input)
 		(at 111.76 50.8 180)
@@ -2367,7 +2442,7 @@
 	)
 	(hierarchical_label "SPI_SCK"
 		(shape output)
-		(at 135.89 91.44 270)
+		(at 140.97 91.44 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2401,8 +2476,32 @@
 		)
 		(uuid "7a9a7c3e-93f2-4034-a288-40ed6244f436")
 	)
-	(hierarchical_label "SPI_MISO"
-		(shape bidirectional)
+	(hierarchical_label "SPI_RESET"
+		(shape output)
+		(at 87.63 34.29 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7d4e06f7-ca59-49b1-8930-9b4585b99236")
+	)
+	(hierarchical_label "SPI_DC"
+		(shape output)
+		(at 130.81 91.44 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9be4825c-28c7-44b0-a8d4-1dd613ff4a6e")
+	)
+	(hierarchical_label "SPI_MOSI"
+		(shape input)
 		(at 138.43 91.44 270)
 		(fields_autoplaced yes)
 		(effects
@@ -2427,7 +2526,7 @@
 	)
 	(hierarchical_label "SPI_CS"
 		(shape output)
-		(at 130.81 91.44 270)
+		(at 111.76 55.88 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2451,7 +2550,7 @@
 	)
 	(hierarchical_label "SCREEN_BACKLIGHT_EN"
 		(shape input)
-		(at 111.76 55.88 180)
+		(at 111.76 66.04 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2461,9 +2560,9 @@
 		)
 		(uuid "c2d27f82-84bd-4cd8-8b9a-02dbc6fd252a")
 	)
-	(hierarchical_label "SPI_MOSI"
+	(hierarchical_label "SPI_MISO"
 		(shape output)
-		(at 133.35 91.44 270)
+		(at 135.89 91.44 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3400,7 +3499,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 40.64 38.1 0)
 			(effects
 				(font
@@ -3537,7 +3636,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 93.98 34.29 0)
 			(effects
 				(font
@@ -3607,7 +3706,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 30.48 38.1 0)
 			(effects
 				(font
@@ -3677,7 +3776,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 52.07 38.1 0)
 			(effects
 				(font
@@ -3747,7 +3846,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 246.38 62.23 0)
 			(effects
 				(font
@@ -3766,6 +3865,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 246.38 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C49678"
 			(at 246.38 62.23 0)
 			(effects
 				(font
@@ -3817,7 +3925,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 232.41 62.23 0)
 			(effects
 				(font
@@ -3836,6 +3944,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 232.41 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C49678"
 			(at 232.41 62.23 0)
 			(effects
 				(font
