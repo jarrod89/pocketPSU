@@ -1237,6 +1237,364 @@
 				)
 			)
 		)
+		(symbol "footprints:F.0603.00026_P2-0603B1TS2-06T-001"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "F.0603.00026/P2-0603B1TS2-06T-001"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "footprints:LED0603-RD"
+				(at 0 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC Part" "C7496819"
+				(at 0 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "F.0603.00026_P2-0603B1TS2-06T-001_0_1"
+				(polyline
+					(pts
+						(xy -1.27 0) (xy -2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 1.78) (xy -1.27 -1.78)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.29 1.52) (xy -3.3 2.54) (xy -2.29 1.52)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 2.54) (xy -2.29 3.56) (xy -1.27 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -4.06 3.3) (xy -3.05 2.79) (xy -3.56 2.29) (xy -4.06 3.3)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.05 4.32) (xy -2.03 3.81) (xy -2.54 3.3) (xy -3.05 4.32)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.78) (xy -1.27 0) (xy 1.27 -1.78) (xy 1.27 1.78)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "footprints:KT-0603R"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "LED"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "KT-0603R"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "footprints:LED0603-RD"
+				(at 0 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://lcsc.com/product-detail/Light-Emitting-Diodes-LED_Red-LED-0603_C2286.html"
+				(at 0 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC Part" "C2286"
+				(at 0 -12.7 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "KT-0603R_0_1"
+				(polyline
+					(pts
+						(xy -2.03 1.52) (xy -3.81 3.3)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 2.03) (xy -1.27 -2.03)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.02 2.54) (xy -2.79 4.32)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.81 3.3) (xy -2.79 2.79) (xy -3.3 2.29) (xy -3.81 3.3)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.79 4.32) (xy -1.78 3.81) (xy -2.29 3.3) (xy -2.79 4.32)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.52) (xy -1.27 0) (xy 1.27 1.78) (xy 1.27 -1.52)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 5.08 0 180)
+					(length 3.81)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "footprints:TS-1187A-B-A-B"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -1824,7 +2182,7 @@
 		(uuid "a964d871-be6e-4880-947b-a3cf7d889042")
 	)
 	(junction
-		(at 240.03 67.31)
+		(at 218.44 76.2)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c5d73997-9e62-4d76-bbda-4df3595f7831")
@@ -1947,6 +2305,16 @@
 	)
 	(wire
 		(pts
+			(xy 46.99 71.12) (xy 46.99 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2c6b725a-6e42-4792-9725-2242bbb26fd6")
+	)
+	(wire
+		(pts
 			(xy 40.64 40.64) (xy 40.64 44.45)
 		)
 		(stroke
@@ -2014,6 +2382,16 @@
 			(type default)
 		)
 		(uuid "4bc08a9c-5e90-4272-81d5-fb19d9d9fc83")
+	)
+	(wire
+		(pts
+			(xy 241.3 57.15) (xy 241.3 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f246843-c1c9-432f-8e27-e0cc57965070")
 	)
 	(wire
 		(pts
@@ -2107,6 +2485,16 @@
 	)
 	(wire
 		(pts
+			(xy 241.3 81.28) (xy 241.3 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "748d6f6b-85b8-444c-8bc7-6afeaa2d2363")
+	)
+	(wire
+		(pts
 			(xy 90.17 34.29) (xy 90.17 38.1)
 		)
 		(stroke
@@ -2187,7 +2575,17 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 64.77) (xy 246.38 67.31)
+			(xy 128.27 83.82) (xy 128.27 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa863887-6a62-4018-8806-2d06ab1f4b5a")
+	)
+	(wire
+		(pts
+			(xy 224.79 73.66) (xy 224.79 76.2)
 		)
 		(stroke
 			(width 0)
@@ -2204,6 +2602,16 @@
 			(type default)
 		)
 		(uuid "ae18a6c2-62f2-4f10-a211-9f128543b3ed")
+	)
+	(wire
+		(pts
+			(xy 241.3 71.12) (xy 241.3 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b223da97-cc7b-476a-82ab-1921949a7127")
 	)
 	(wire
 		(pts
@@ -2227,7 +2635,7 @@
 	)
 	(wire
 		(pts
-			(xy 232.41 67.31) (xy 240.03 67.31)
+			(xy 210.82 76.2) (xy 218.44 76.2)
 		)
 		(stroke
 			(width 0)
@@ -2247,7 +2655,7 @@
 	)
 	(wire
 		(pts
-			(xy 232.41 64.77) (xy 232.41 67.31)
+			(xy 210.82 73.66) (xy 210.82 76.2)
 		)
 		(stroke
 			(width 0)
@@ -2267,7 +2675,7 @@
 	)
 	(wire
 		(pts
-			(xy 240.03 67.31) (xy 240.03 69.85)
+			(xy 218.44 76.2) (xy 218.44 78.74)
 		)
 		(stroke
 			(width 0)
@@ -2287,7 +2695,7 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 57.15) (xy 246.38 59.69)
+			(xy 224.79 66.04) (xy 224.79 68.58)
 		)
 		(stroke
 			(width 0)
@@ -2307,7 +2715,7 @@
 	)
 	(wire
 		(pts
-			(xy 232.41 57.15) (xy 232.41 59.69)
+			(xy 210.82 66.04) (xy 210.82 68.58)
 		)
 		(stroke
 			(width 0)
@@ -2317,7 +2725,7 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 67.31) (xy 240.03 67.31)
+			(xy 224.79 76.2) (xy 218.44 76.2)
 		)
 		(stroke
 			(width 0)
@@ -2344,6 +2752,16 @@
 			(type default)
 		)
 		(uuid "e4ea6fff-fa3a-4be4-8d89-7341040f7f70")
+	)
+	(wire
+		(pts
+			(xy 46.99 91.44) (xy 46.99 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e50a270a-b218-4d30-b105-7c8682c30c51")
 	)
 	(wire
 		(pts
@@ -2384,6 +2802,16 @@
 			(type default)
 		)
 		(uuid "ee01fe65-1a5c-4c5a-a757-0ed7e539b250")
+	)
+	(wire
+		(pts
+			(xy 46.99 101.6) (xy 46.99 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f0a3e874-1081-4f17-93f6-c3cdaa817545")
 	)
 	(wire
 		(pts
@@ -2433,6 +2861,28 @@
 			(justify left top)
 		)
 		(uuid "f936128b-2aee-4ebd-ba70-3132ccaad256")
+	)
+	(label "BLINKY_LED"
+		(at 46.99 80.01 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1792e8b4-45f2-4851-b9e5-273c2bcd6bef")
+	)
+	(label "BLINKY_LED"
+		(at 128.27 100.33 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "23195e96-5464-4f1b-ad0f-3cf72055936d")
 	)
 	(hierarchical_label "BT_3"
 		(shape input)
@@ -2663,6 +3113,76 @@
 		(uuid "ff8fdcc9-6fb1-48a5-b7b4-327951ba609f")
 	)
 	(symbol
+		(lib_id "Device:R_Small")
+		(at 241.3 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "04757b4f-f7e6-4951-8f5b-caf04df28376")
+		(property "Reference" "R15"
+			(at 243.84 77.4699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100R"
+			(at 243.84 80.0099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 241.3 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 241.3 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 241.3 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "79db877c-f79f-4099-b652-13402d17dfeb")
+		)
+		(pin "2"
+			(uuid "85969d98-8d99-42d2-b9cd-c691011a074a")
+		)
+		(instances
+			(project "pocketPSU_elec_main"
+				(path "/439011d5-4dd5-4d65-a9bd-b0be402d54a5/725044cc-ecb2-459a-b2bb-596cb099bd1f"
+					(reference "R15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3.3V")
 		(at 259.08 41.91 270)
 		(unit 1)
@@ -2881,7 +3401,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 240.03 69.85 0)
+		(at 218.44 78.74 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2890,7 +3410,7 @@
 		(fields_autoplaced yes)
 		(uuid "20cabb5e-7ecc-4ed7-a09d-bcfa2ca343fd")
 		(property "Reference" "#PWR048"
-			(at 240.03 76.2 0)
+			(at 218.44 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2899,7 +3419,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 240.03 74.93 0)
+			(at 218.44 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2907,7 +3427,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 240.03 69.85 0)
+			(at 218.44 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2916,7 +3436,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 240.03 69.85 0)
+			(at 218.44 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2925,7 +3445,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 240.03 69.85 0)
+			(at 218.44 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3013,6 +3533,151 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
+		(at 241.3 57.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "28518367-df43-44e3-94cc-309fd96ccf53")
+		(property "Reference" "#PWR067"
+			(at 241.3 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 241.3 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 241.3 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 241.3 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 241.3 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b7077554-460a-4de8-b946-d9eddff9ba0f")
+		)
+		(instances
+			(project "pocketPSU_elec_main"
+				(path "/439011d5-4dd5-4d65-a9bd-b0be402d54a5/725044cc-ecb2-459a-b2bb-596cb099bd1f"
+					(reference "#PWR067")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "footprints:F.0603.00026_P2-0603B1TS2-06T-001")
+		(at 241.3 66.04 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "30890733-0c01-43bc-b70f-7568fb0b2d20")
+		(property "Reference" "U5"
+			(at 243.84 65.5299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "F.0603.00026/P2-0603B1TS2-06T-001"
+			(at 243.84 68.0699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "footprints:LED0603-RD"
+			(at 248.92 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 241.3 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 241.3 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C7496819"
+			(at 251.46 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3e9558a1-5968-4766-9cbc-c094ff9a3620")
+		)
+		(pin "1"
+			(uuid "a9222f79-073d-4cbb-9fde-8f8a0eb01720")
+		)
+		(instances
+			(project "pocketPSU_elec_main"
+				(path "/439011d5-4dd5-4d65-a9bd-b0be402d54a5/725044cc-ecb2-459a-b2bb-596cb099bd1f"
+					(reference "U5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
 		(at 110.49 40.64 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3080,7 +3745,7 @@
 	)
 	(symbol
 		(lib_id "power:VBUS")
-		(at 232.41 57.15 0)
+		(at 210.82 66.04 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3089,7 +3754,7 @@
 		(fields_autoplaced yes)
 		(uuid "3d76f6f4-9abc-4c8d-9ab9-7f503641acde")
 		(property "Reference" "#PWR050"
-			(at 232.41 60.96 0)
+			(at 210.82 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3098,7 +3763,7 @@
 			)
 		)
 		(property "Value" "VBUS"
-			(at 232.41 52.07 0)
+			(at 210.82 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3106,7 +3771,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 232.41 57.15 0)
+			(at 210.82 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3115,7 +3780,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 232.41 57.15 0)
+			(at 210.82 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3124,7 +3789,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VBUS\""
-			(at 232.41 57.15 0)
+			(at 210.82 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3213,7 +3878,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 246.38 57.15 0)
+		(at 224.79 66.04 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3222,7 +3887,7 @@
 		(fields_autoplaced yes)
 		(uuid "4ee1fe4b-9f27-473c-97e5-f97350859ba0")
 		(property "Reference" "#PWR049"
-			(at 246.38 60.96 0)
+			(at 224.79 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3231,7 +3896,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 246.38 52.07 0)
+			(at 224.79 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3239,7 +3904,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 246.38 57.15 0)
+			(at 224.79 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3248,7 +3913,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 246.38 57.15 0)
+			(at 224.79 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3257,7 +3922,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 246.38 57.15 0)
+			(at 224.79 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3815,6 +4480,151 @@
 		)
 	)
 	(symbol
+		(lib_id "footprints:KT-0603R")
+		(at 46.99 86.36 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a2024e77-fd42-4592-a939-a7fe23f44a83")
+		(property "Reference" "LED2"
+			(at 50.8 86.3599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "KT-0603R"
+			(at 50.8 88.8999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "footprints:LED0603-RD"
+			(at 54.61 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/Light-Emitting-Diodes-LED_Red-LED-0603_C2286.html"
+			(at 57.15 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 46.99 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C2286"
+			(at 59.69 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "7ffd369d-ffed-4208-999d-fa4fb65cb7d2")
+		)
+		(pin "1"
+			(uuid "bf4c3bf5-40b0-41e7-984f-75f0d3db7bff")
+		)
+		(instances
+			(project "pocketPSU_elec_main"
+				(path "/439011d5-4dd5-4d65-a9bd-b0be402d54a5/725044cc-ecb2-459a-b2bb-596cb099bd1f"
+					(reference "LED2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 241.3 85.09 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a677423e-0514-4c6b-b030-8ef13fb7ff04")
+		(property "Reference" "#PWR065"
+			(at 241.3 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 241.3 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 241.3 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 241.3 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 241.3 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "842e20ee-fcf0-4837-aa02-c4e095ac43e1")
+		)
+		(instances
+			(project "pocketPSU_elec_main"
+				(path "/439011d5-4dd5-4d65-a9bd-b0be402d54a5/725044cc-ecb2-459a-b2bb-596cb099bd1f"
+					(reference "#PWR065")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 52.07 38.1 0)
 		(unit 1)
@@ -3885,8 +4695,74 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 46.99 105.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b38d1f81-2bad-4f0b-b632-667d12e6d20d")
+		(property "Reference" "#PWR069"
+			(at 46.99 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 46.99 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 46.99 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 46.99 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 46.99 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bbbbc1be-fcf2-46cb-901a-30c424571bce")
+		)
+		(instances
+			(project "pocketPSU_elec_main"
+				(path "/439011d5-4dd5-4d65-a9bd-b0be402d54a5/725044cc-ecb2-459a-b2bb-596cb099bd1f"
+					(reference "#PWR069")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
-		(at 246.38 62.23 0)
+		(at 224.79 71.12 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3895,7 +4771,7 @@
 		(fields_autoplaced yes)
 		(uuid "c5293ff0-9fca-44ec-ad76-c418601bfcfa")
 		(property "Reference" "C12"
-			(at 248.92 60.9662 0)
+			(at 227.33 69.8562 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3904,7 +4780,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 248.92 63.5062 0)
+			(at 227.33 72.3962 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3913,7 +4789,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 246.38 62.23 0)
+			(at 224.79 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3922,7 +4798,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 246.38 62.23 0)
+			(at 224.79 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3931,7 +4807,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 246.38 62.23 0)
+			(at 224.79 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3940,7 +4816,7 @@
 			)
 		)
 		(property "LCSC Part" "C49678"
-			(at 246.38 62.23 0)
+			(at 224.79 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3965,7 +4841,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 232.41 62.23 0)
+		(at 210.82 71.12 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3974,7 +4850,7 @@
 		(fields_autoplaced yes)
 		(uuid "ca7876a3-e893-4b74-91d1-de885768a6bb")
 		(property "Reference" "C13"
-			(at 234.95 60.9662 0)
+			(at 213.36 69.8562 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3983,7 +4859,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 234.95 63.5062 0)
+			(at 213.36 72.3962 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3992,7 +4868,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 232.41 62.23 0)
+			(at 210.82 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4001,7 +4877,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 232.41 62.23 0)
+			(at 210.82 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4010,7 +4886,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 232.41 62.23 0)
+			(at 210.82 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4019,7 +4895,7 @@
 			)
 		)
 		(property "LCSC Part" "C49678"
-			(at 232.41 62.23 0)
+			(at 210.82 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4253,6 +5129,76 @@
 			(project "pocketPSU_elec_main"
 				(path "/439011d5-4dd5-4d65-a9bd-b0be402d54a5/725044cc-ecb2-459a-b2bb-596cb099bd1f"
 					(reference "#PWR044")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 46.99 99.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e23830b6-cbb1-4a8c-ad97-81cb364af443")
+		(property "Reference" "R16"
+			(at 49.53 97.7899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100R"
+			(at 49.53 100.3299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 46.99 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 46.99 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 46.99 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f50e4c9a-5aaf-4a08-bb73-ff5af97b1d5a")
+		)
+		(pin "2"
+			(uuid "50641332-5946-4b57-ad1e-d26b10441529")
+		)
+		(instances
+			(project "pocketPSU_elec_main"
+				(path "/439011d5-4dd5-4d65-a9bd-b0be402d54a5/725044cc-ecb2-459a-b2bb-596cb099bd1f"
+					(reference "R16")
 					(unit 1)
 				)
 			)
