@@ -206,6 +206,141 @@
 				)
 			)
 		)
+		(symbol "Device:C_Small"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.254 1.778 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C_Small"
+				(at 0.254 -2.032 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Unpolarized capacitor, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "capacitor cap"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_Small_0_1"
+				(polyline
+					(pts
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
+					)
+					(stroke
+						(width 0.3302)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 0.508) (xy 1.524 0.508)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 2.032)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 2.032)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Device:R_Small"
 			(pin_numbers hide)
 			(pin_names
@@ -1790,6 +1925,16 @@
 	)
 	(wire
 		(pts
+			(xy 113.03 83.82) (xy 113.03 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13e1a6c8-01eb-4263-a8c5-c211ad0f8cb4")
+	)
+	(wire
+		(pts
 			(xy 210.82 93.98) (xy 210.82 104.14)
 		)
 		(stroke
@@ -1817,6 +1962,16 @@
 			(type default)
 		)
 		(uuid "1c35d667-9609-44d7-9bd5-7d804c68907d")
+	)
+	(wire
+		(pts
+			(xy 113.03 76.2) (xy 113.03 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1fb31150-ae1d-4abc-8973-3f3ef53238a0")
 	)
 	(wire
 		(pts
@@ -1867,6 +2022,26 @@
 			(type default)
 		)
 		(uuid "3be2a23a-1307-423d-9cf2-b646ef61b3ea")
+	)
+	(wire
+		(pts
+			(xy 101.6 83.82) (xy 101.6 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d2230c3-aca6-47af-b495-29ee3129ee46")
+	)
+	(wire
+		(pts
+			(xy 68.58 83.82) (xy 68.58 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f3ab277-7a1d-4b99-a259-6f83d894bdcf")
 	)
 	(wire
 		(pts
@@ -1940,6 +2115,26 @@
 	)
 	(wire
 		(pts
+			(xy 80.01 74.93) (xy 80.01 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4c5732a3-6ec0-4904-9fa0-ba6007267098")
+	)
+	(wire
+		(pts
+			(xy 101.6 76.2) (xy 101.6 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4df8012d-1e6a-46c9-9eac-8595c52ccf71")
+	)
+	(wire
+		(pts
 			(xy 124.46 120.65) (xy 124.46 125.73)
 		)
 		(stroke
@@ -1977,6 +2172,16 @@
 			(type default)
 		)
 		(uuid "5f821ac7-7b31-4c37-adea-346e31786a36")
+	)
+	(wire
+		(pts
+			(xy 43.18 83.82) (xy 43.18 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6226891f-bcf7-4724-93c9-0ed170fd3ec2")
 	)
 	(wire
 		(pts
@@ -2040,6 +2245,16 @@
 	)
 	(wire
 		(pts
+			(xy 43.18 74.93) (xy 43.18 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7dead805-134c-4c89-8ee6-f25945464551")
+	)
+	(wire
+		(pts
 			(xy 120.65 120.65) (xy 124.46 120.65)
 		)
 		(stroke
@@ -2057,6 +2272,16 @@
 			(type default)
 		)
 		(uuid "82f1b3af-e03c-4ec5-8363-8faa192c5a87")
+	)
+	(wire
+		(pts
+			(xy 68.58 74.93) (xy 68.58 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d240808-40a1-4224-b1e6-13dcbc85ef34")
 	)
 	(wire
 		(pts
@@ -2170,6 +2395,16 @@
 	)
 	(wire
 		(pts
+			(xy 31.75 83.82) (xy 31.75 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4a8477f-365b-4d8f-b851-86ce655b8ce9")
+	)
+	(wire
+		(pts
 			(xy 120.65 115.57) (xy 130.81 115.57)
 		)
 		(stroke
@@ -2207,6 +2442,16 @@
 			(type default)
 		)
 		(uuid "cf4eb425-e30b-4b74-b3f9-1f90a0a225f1")
+	)
+	(wire
+		(pts
+			(xy 31.75 74.93) (xy 31.75 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d3b19afb-ac43-4ce3-9a42-5c45b170f5fd")
 	)
 	(wire
 		(pts
@@ -2267,6 +2512,16 @@
 			(type default)
 		)
 		(uuid "eb322e3b-3346-4444-9a2f-8a0f53ff2ac8")
+	)
+	(wire
+		(pts
+			(xy 80.01 83.82) (xy 80.01 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee8ee425-609e-44cb-ae63-0423419ba52b")
 	)
 	(wire
 		(pts
@@ -2368,6 +2623,17 @@
 		)
 		(uuid "1ed4f2f4-06e7-4746-a4ef-518a5ece8852")
 	)
+	(label "USB_CC2"
+		(at 113.03 76.2 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "25e1f9bb-4dd3-4b01-b137-061bca89bbe9")
+	)
 	(label "USB_SCL"
 		(at 40.64 121.92 0)
 		(fields_autoplaced yes)
@@ -2389,6 +2655,17 @@
 			(justify left bottom)
 		)
 		(uuid "528b7f7e-8dfd-46fc-8eaf-ace2253949c6")
+	)
+	(label "USB_CC1"
+		(at 101.6 76.2 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "54c4e76b-a743-4941-97c6-6d6a638bccda")
 	)
 	(label "USB_CC2"
 		(at 163.83 50.8 0)
@@ -2596,6 +2873,72 @@
 		(uuid "fed9feb3-da3c-4559-b2c3-0c3917cbfda7")
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 31.75 87.63 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "230ac67f-6d43-408b-96af-7742f3922b3e")
+		(property "Reference" "#PWR058"
+			(at 31.75 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 31.75 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 31.75 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 31.75 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 31.75 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "916e61e8-9990-4df4-ab52-eea0dfd8ed71")
+		)
+		(instances
+			(project "pocketPSU_elec_main"
+				(path "/439011d5-4dd5-4d65-a9bd-b0be402d54a5/6a8f7395-3ccf-431e-bc54-d9f688783b5c"
+					(reference "#PWR058")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 46.99 114.3 0)
 		(unit 1)
@@ -2614,7 +2957,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1K"
+		(property "Value" "4.7k"
 			(at 49.53 115.5699 0)
 			(effects
 				(font
@@ -2734,6 +3077,72 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 101.6 87.63 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3a11b3e2-aa6b-4f30-b243-04d9c8f898e9")
+		(property "Reference" "#PWR066"
+			(at 101.6 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 101.6 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 101.6 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 101.6 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 101.6 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "27641f34-1dd3-4aa2-bc99-dee5fe8c7957")
+		)
+		(instances
+			(project "pocketPSU_elec_main"
+				(path "/439011d5-4dd5-4d65-a9bd-b0be402d54a5/6a8f7395-3ccf-431e-bc54-d9f688783b5c"
+					(reference "#PWR066")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 210.82 128.27 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2793,6 +3202,76 @@
 			(project "pocketPSU_elec_main"
 				(path "/439011d5-4dd5-4d65-a9bd-b0be402d54a5/6a8f7395-3ccf-431e-bc54-d9f688783b5c"
 					(reference "#PWR056")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 68.58 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4588d55a-f0d5-4962-a68a-55aa73c97109")
+		(property "Reference" "C16"
+			(at 71.12 80.0162 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF"
+			(at 71.12 82.5562 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 68.58 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 68.58 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 68.58 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1302bfab-9e80-4c2d-abec-6fbc100a34ce")
+		)
+		(pin "1"
+			(uuid "1b7ebe89-959a-48b2-b29f-ab5f64f7d1d9")
+		)
+		(instances
+			(project "pocketPSU_elec_main"
+				(path "/439011d5-4dd5-4d65-a9bd-b0be402d54a5/6a8f7395-3ccf-431e-bc54-d9f688783b5c"
+					(reference "C16")
 					(unit 1)
 				)
 			)
@@ -2915,6 +3394,274 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 68.58 74.93 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4886c0cb-6940-4bea-aa7a-7ca033800929")
+		(property "Reference" "#PWR061"
+			(at 68.58 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 68.58 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 68.58 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 68.58 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 68.58 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "205ef984-8415-4c4e-aefc-ac7d554a53ee")
+		)
+		(instances
+			(project "pocketPSU_elec_main"
+				(path "/439011d5-4dd5-4d65-a9bd-b0be402d54a5/6a8f7395-3ccf-431e-bc54-d9f688783b5c"
+					(reference "#PWR061")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 113.03 87.63 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "490036c2-da80-4425-b926-bb2175a90147")
+		(property "Reference" "#PWR068"
+			(at 113.03 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 113.03 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 113.03 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 113.03 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 113.03 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "da1ab494-bbbf-43de-b1cf-f8c24654137b")
+		)
+		(instances
+			(project "pocketPSU_elec_main"
+				(path "/439011d5-4dd5-4d65-a9bd-b0be402d54a5/6a8f7395-3ccf-431e-bc54-d9f688783b5c"
+					(reference "#PWR068")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 80.01 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4b6bbd46-76b8-4118-a846-78e37c1389b3")
+		(property "Reference" "C17"
+			(at 82.55 80.0162 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 82.55 82.5562 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 80.01 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 80.01 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 80.01 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f6aa3a5a-3a60-46a6-a926-c509c04631e2")
+		)
+		(pin "1"
+			(uuid "829969b1-224b-48c0-bcac-f03e5c8448b9")
+		)
+		(instances
+			(project "pocketPSU_elec_main"
+				(path "/439011d5-4dd5-4d65-a9bd-b0be402d54a5/6a8f7395-3ccf-431e-bc54-d9f688783b5c"
+					(reference "C17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 80.01 74.93 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5d1e8f58-8193-4783-9bb8-d1b1bb4ca879")
+		(property "Reference" "#PWR063"
+			(at 80.01 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 80.01 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 80.01 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 80.01 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 80.01 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e0cac1d7-3da4-4620-9a0a-5a93a55cf973")
+		)
+		(instances
+			(project "pocketPSU_elec_main"
+				(path "/439011d5-4dd5-4d65-a9bd-b0be402d54a5/6a8f7395-3ccf-431e-bc54-d9f688783b5c"
+					(reference "#PWR063")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 168.91 58.42 90)
 		(unit 1)
@@ -2982,6 +3729,146 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Small")
+		(at 113.03 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "78de87c7-1f05-48bc-a87f-83455d40e880")
+		(property "Reference" "C19"
+			(at 115.57 80.0162 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 115.57 82.5562 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 113.03 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 113.03 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 113.03 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f875b813-e283-4f22-8f2e-bafd9d5dab9c")
+		)
+		(pin "1"
+			(uuid "aa5f3449-ca30-4d87-a507-64f23de08007")
+		)
+		(instances
+			(project "pocketPSU_elec_main"
+				(path "/439011d5-4dd5-4d65-a9bd-b0be402d54a5/6a8f7395-3ccf-431e-bc54-d9f688783b5c"
+					(reference "C19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 31.75 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7a10a67e-990e-4161-8e30-6417bace3275")
+		(property "Reference" "C14"
+			(at 34.29 80.0162 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10uF"
+			(at 34.29 82.5562 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 31.75 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 31.75 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 31.75 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "475983d2-f365-416c-a4fb-3c1392dfaf72")
+		)
+		(pin "1"
+			(uuid "f2285185-df13-4e2e-9e7a-25582b9785b0")
+		)
+		(instances
+			(project "pocketPSU_elec_main"
+				(path "/439011d5-4dd5-4d65-a9bd-b0be402d54a5/6a8f7395-3ccf-431e-bc54-d9f688783b5c"
+					(reference "C14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3.3V")
 		(at 60.96 109.22 0)
 		(unit 1)
@@ -3042,6 +3929,76 @@
 			(project "pocketPSU_elec_main"
 				(path "/439011d5-4dd5-4d65-a9bd-b0be402d54a5/6a8f7395-3ccf-431e-bc54-d9f688783b5c"
 					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 101.6 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7b8755db-d291-484b-b391-7b2aa7c921cf")
+		(property "Reference" "C18"
+			(at 104.14 80.0162 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF"
+			(at 104.14 82.5562 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 101.6 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 101.6 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 101.6 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "fe28cb5f-85e2-4c17-91f1-cd27903e66da")
+		)
+		(pin "1"
+			(uuid "b31675f1-f104-4e69-8425-0e0ed24a8967")
+		)
+		(instances
+			(project "pocketPSU_elec_main"
+				(path "/439011d5-4dd5-4d65-a9bd-b0be402d54a5/6a8f7395-3ccf-431e-bc54-d9f688783b5c"
+					(reference "C18")
 					(unit 1)
 				)
 			)
@@ -3132,7 +4089,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1K"
+		(property "Value" "4.7K"
 			(at 63.5 115.5699 0)
 			(effects
 				(font
@@ -3472,6 +4429,72 @@
 	)
 	(symbol
 		(lib_id "power:VBUS")
+		(at 31.75 74.93 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a00f21df-cf55-424d-9ca9-169c0bee656f")
+		(property "Reference" "#PWR060"
+			(at 31.75 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VBUS"
+			(at 31.75 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 31.75 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 31.75 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VBUS\""
+			(at 31.75 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9e450556-b883-4e13-b801-9813124fc471")
+		)
+		(instances
+			(project "pocketPSU_elec_main"
+				(path "/439011d5-4dd5-4d65-a9bd-b0be402d54a5/6a8f7395-3ccf-431e-bc54-d9f688783b5c"
+					(reference "#PWR060")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VBUS")
 		(at 127 53.34 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3736,6 +4759,72 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 68.58 87.63 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c85d09c5-93d0-4a65-be01-97911c97698a")
+		(property "Reference" "#PWR062"
+			(at 68.58 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 68.58 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 68.58 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 68.58 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 68.58 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f62517b9-9e6e-47b5-8e63-87303b2f736c")
+		)
+		(instances
+			(project "pocketPSU_elec_main"
+				(path "/439011d5-4dd5-4d65-a9bd-b0be402d54a5/6a8f7395-3ccf-431e-bc54-d9f688783b5c"
+					(reference "#PWR062")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 147.32 74.93 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3795,6 +4884,72 @@
 			(project "pocketPSU_elec_main"
 				(path "/439011d5-4dd5-4d65-a9bd-b0be402d54a5/6a8f7395-3ccf-431e-bc54-d9f688783b5c"
 					(reference "#PWR043")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VBUS")
+		(at 43.18 74.93 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d0534d10-44d8-4739-b5e0-a76daa0fecbd")
+		(property "Reference" "#PWR059"
+			(at 43.18 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VBUS"
+			(at 43.18 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 43.18 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 43.18 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VBUS\""
+			(at 43.18 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2b370a19-9cde-4a56-9cb7-aec467f55122")
+		)
+		(instances
+			(project "pocketPSU_elec_main"
+				(path "/439011d5-4dd5-4d65-a9bd-b0be402d54a5/6a8f7395-3ccf-431e-bc54-d9f688783b5c"
+					(reference "#PWR059")
 					(unit 1)
 				)
 			)
@@ -3862,6 +5017,76 @@
 			(project "pocketPSU_elec_main"
 				(path "/439011d5-4dd5-4d65-a9bd-b0be402d54a5/6a8f7395-3ccf-431e-bc54-d9f688783b5c"
 					(reference "#PWR042")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 43.18 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e6d9017c-9918-4d3b-b269-067dd4856bda")
+		(property "Reference" "C15"
+			(at 45.72 80.0162 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 45.72 82.5562 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 43.18 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 43.18 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 43.18 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "20202f1d-59f4-44e9-a01c-ea48099f81bc")
+		)
+		(pin "1"
+			(uuid "b069b1fc-4ec6-47ff-b564-d7b4e650dbaf")
+		)
+		(instances
+			(project "pocketPSU_elec_main"
+				(path "/439011d5-4dd5-4d65-a9bd-b0be402d54a5/6a8f7395-3ccf-431e-bc54-d9f688783b5c"
+					(reference "C15")
 					(unit 1)
 				)
 			)
@@ -4062,6 +5287,72 @@
 			(project "pocketPSU_elec_main"
 				(path "/439011d5-4dd5-4d65-a9bd-b0be402d54a5/6a8f7395-3ccf-431e-bc54-d9f688783b5c"
 					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 80.01 87.63 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ee943d53-28bd-4a1e-a1fa-62d70636167e")
+		(property "Reference" "#PWR064"
+			(at 80.01 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 80.01 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 80.01 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 80.01 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 80.01 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5eb14592-1ccd-4ac5-aea4-c17b30141d80")
+		)
+		(instances
+			(project "pocketPSU_elec_main"
+				(path "/439011d5-4dd5-4d65-a9bd-b0be402d54a5/6a8f7395-3ccf-431e-bc54-d9f688783b5c"
+					(reference "#PWR064")
 					(unit 1)
 				)
 			)
@@ -4329,6 +5620,72 @@
 			(project "pocketPSU_elec_main"
 				(path "/439011d5-4dd5-4d65-a9bd-b0be402d54a5/6a8f7395-3ccf-431e-bc54-d9f688783b5c"
 					(reference "#PWR054")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 43.18 87.63 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f9481f6a-f454-469f-a7e2-b70661e5b859")
+		(property "Reference" "#PWR057"
+			(at 43.18 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 43.18 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 43.18 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 43.18 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 43.18 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ac1edb0b-670a-400d-bbbc-dacb45adbf58")
+		)
+		(instances
+			(project "pocketPSU_elec_main"
+				(path "/439011d5-4dd5-4d65-a9bd-b0be402d54a5/6a8f7395-3ccf-431e-bc54-d9f688783b5c"
+					(reference "#PWR057")
 					(unit 1)
 				)
 			)
