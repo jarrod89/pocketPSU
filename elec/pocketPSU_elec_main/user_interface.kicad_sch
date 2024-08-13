@@ -2351,16 +2351,6 @@
 	)
 	(wire
 		(pts
-			(xy 33.02 43.18) (xy 36.83 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3c48deda-0272-486e-9a8e-151c606b204d")
-	)
-	(wire
-		(pts
 			(xy 137.16 147.32) (xy 138.43 147.32)
 		)
 		(stroke
@@ -2388,16 +2378,6 @@
 			(type default)
 		)
 		(uuid "3e5b63d4-57c5-4ce5-8e7a-0379a100ef34")
-	)
-	(wire
-		(pts
-			(xy 33.02 39.37) (xy 36.83 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3f910761-03e0-4a47-ac12-5bd1d3af1fc9")
 	)
 	(wire
 		(pts
@@ -2608,16 +2588,6 @@
 			(type default)
 		)
 		(uuid "61b4a2cf-01e8-488c-8c0a-cff376b51a28")
-	)
-	(wire
-		(pts
-			(xy 33.02 44.45) (xy 33.02 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "68a54570-70ca-4e81-b489-3dc1af350620")
 	)
 	(wire
 		(pts
@@ -3391,16 +3361,6 @@
 	)
 	(wire
 		(pts
-			(xy 33.02 38.1) (xy 33.02 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f7305d35-f5b2-42e8-867d-87d2be978593")
-	)
-	(wire
-		(pts
 			(xy 231.14 132.08) (xy 236.22 132.08)
 		)
 		(stroke
@@ -3659,30 +3619,6 @@
 			(justify left)
 		)
 		(uuid "645687cc-83e0-4caf-b7ae-4245ddc2b2c7")
-	)
-	(hierarchical_label "GND"
-		(shape input)
-		(at 36.83 43.18 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "86575c60-3093-429f-a178-23b1b201e75e")
-	)
-	(hierarchical_label "+3.3V"
-		(shape input)
-		(at 36.83 39.37 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "8ad01297-d7aa-4e80-bc66-e4a049a6f025")
 	)
 	(hierarchical_label "BT_1"
 		(shape output)
@@ -4029,72 +3965,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 33.02 38.1 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1584fb22-c729-4db7-857f-d4218140b87d")
-		(property "Reference" "#PWR09"
-			(at 33.02 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 33.02 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 33.02 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 33.02 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 33.02 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "13934b88-1977-420e-a002-7b1c2224f66f")
-		)
-		(instances
-			(project "pocketPSU_elec_main"
-				(path "/439011d5-4dd5-4d65-a9bd-b0be402d54a5/cbe29d96-4bd9-4dd2-be02-96003f32f1da"
-					(reference "#PWR09")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Small")
 		(at 45.72 144.78 0)
 		(unit 1)
@@ -4357,72 +4227,6 @@
 			(project "pocketPSU_elec_main"
 				(path "/439011d5-4dd5-4d65-a9bd-b0be402d54a5/cbe29d96-4bd9-4dd2-be02-96003f32f1da"
 					(reference "#PWR013")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 33.02 44.45 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "33d03da0-7c5a-41ee-ab4a-0845ce1d2ca2")
-		(property "Reference" "#PWR08"
-			(at 33.02 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 33.02 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 33.02 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 33.02 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 33.02 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7dacc32e-e46a-490f-9b16-d4ef9d26c7c3")
-		)
-		(instances
-			(project "pocketPSU_elec_main"
-				(path "/439011d5-4dd5-4d65-a9bd-b0be402d54a5/cbe29d96-4bd9-4dd2-be02-96003f32f1da"
-					(reference "#PWR08")
 					(unit 1)
 				)
 			)

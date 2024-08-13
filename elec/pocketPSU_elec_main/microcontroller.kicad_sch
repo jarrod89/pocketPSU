@@ -1867,6 +1867,16 @@
 	)
 	(wire
 		(pts
+			(xy 157.48 63.5) (xy 161.29 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f4add04-316b-4a7f-b2ac-86bf354e200e")
+	)
+	(wire
+		(pts
 			(xy 171.45 35.56) (xy 173.99 35.56)
 		)
 		(stroke
@@ -2024,6 +2034,16 @@
 			(type default)
 		)
 		(uuid "5e7308af-0a0e-45a9-a002-215128f1f140")
+	)
+	(wire
+		(pts
+			(xy 157.48 68.58) (xy 161.29 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68229265-c330-4028-982c-4552b52ea3b8")
 	)
 	(wire
 		(pts
@@ -2254,6 +2274,16 @@
 			(type default)
 		)
 		(uuid "cb3fe062-5eb6-492f-96f5-fc39dad42e5d")
+	)
+	(wire
+		(pts
+			(xy 157.48 66.04) (xy 161.29 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd089e62-e1a2-469c-8315-557c7ee81682")
 	)
 	(wire
 		(pts
@@ -2488,6 +2518,30 @@
 		)
 		(uuid "7d4e06f7-ca59-49b1-8930-9b4585b99236")
 	)
+	(hierarchical_label "USB_SDA"
+		(shape bidirectional)
+		(at 161.29 68.58 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8b8a8753-5a78-482d-9c22-1044b3f8a917")
+	)
+	(hierarchical_label "USB_INT_N"
+		(shape bidirectional)
+		(at 161.29 63.5 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "903d91d2-17a8-42bf-8fc6-d54a5b4ac609")
+	)
 	(hierarchical_label "SPI_DC"
 		(shape output)
 		(at 130.81 91.44 270)
@@ -2595,6 +2649,18 @@
 			(justify right)
 		)
 		(uuid "f34dd91f-c225-42d0-9f97-fafa500a58bb")
+	)
+	(hierarchical_label "USB_SCL"
+		(shape output)
+		(at 161.29 66.04 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ff8fdcc9-6fb1-48a5-b7b4-327951ba609f")
 	)
 	(symbol
 		(lib_id "power:+3.3V")

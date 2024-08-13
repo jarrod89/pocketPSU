@@ -15,15 +15,6 @@
 		(uuid "2ecb5654-375f-44bf-a779-d5cbb4af8e20")
 	)
 	(bus_entry
-		(at 106.68 165.1)
-		(size 2.54 2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7b219b48-3885-43e8-ae52-1996dea5face")
-	)
-	(bus_entry
 		(at 106.68 167.64)
 		(size 2.54 2.54)
 		(stroke
@@ -51,7 +42,7 @@
 		(uuid "aab87fed-bb33-4d20-8043-18d93d95c2f6")
 	)
 	(bus_entry
-		(at 106.68 162.56)
+		(at 106.68 165.1)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
@@ -59,9 +50,18 @@
 		)
 		(uuid "d8726c3c-1f07-48a5-8d69-35ad75380c58")
 	)
+	(bus_entry
+		(at 106.68 162.56)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2cb0a91-1034-4fc8-9f37-a8444375de8b")
+	)
 	(wire
 		(pts
-			(xy 73.66 67.31) (xy 83.82 67.31)
+			(xy 73.66 52.07) (xy 83.82 52.07)
 		)
 		(stroke
 			(width 0)
@@ -81,7 +81,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 78.74) (xy 83.82 78.74)
+			(xy 73.66 63.5) (xy 83.82 63.5)
 		)
 		(stroke
 			(width 0)
@@ -91,7 +91,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 87.63) (xy 83.82 87.63)
+			(xy 73.66 72.39) (xy 83.82 72.39)
 		)
 		(stroke
 			(width 0)
@@ -108,6 +108,16 @@
 			(type default)
 		)
 		(uuid "23b6c4bd-03a1-4396-aac8-c504c65838c8")
+	)
+	(wire
+		(pts
+			(xy 62.23 31.75) (xy 72.39 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24620f89-b1fb-4918-8716-e42a91291c66")
 	)
 	(wire
 		(pts
@@ -131,7 +141,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 99.06) (xy 83.82 99.06)
+			(xy 73.66 83.82) (xy 83.82 83.82)
 		)
 		(stroke
 			(width 0)
@@ -141,7 +151,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 93.98) (xy 83.82 93.98)
+			(xy 73.66 78.74) (xy 83.82 78.74)
 		)
 		(stroke
 			(width 0)
@@ -161,7 +171,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 91.44) (xy 83.82 91.44)
+			(xy 73.66 76.2) (xy 83.82 76.2)
 		)
 		(stroke
 			(width 0)
@@ -181,7 +191,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 101.6) (xy 83.82 101.6)
+			(xy 73.66 86.36) (xy 83.82 86.36)
 		)
 		(stroke
 			(width 0)
@@ -211,7 +221,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 85.09) (xy 83.82 85.09)
+			(xy 73.66 69.85) (xy 83.82 69.85)
 		)
 		(stroke
 			(width 0)
@@ -221,13 +231,23 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 167.64) (xy 110.49 167.64)
+			(xy 62.23 29.21) (xy 72.39 29.21)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "84b9c9e2-fe8f-4b3c-a028-0af5a94fdc59")
+		(uuid "6fe8c9e2-d262-4180-9863-7d43c328a0a8")
+	)
+	(bus
+		(pts
+			(xy 106.68 162.56) (xy 106.68 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "816bc7dc-83f4-429c-b995-efcf01ed58f1")
 	)
 	(bus
 		(pts
@@ -241,7 +261,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 69.85) (xy 83.82 69.85)
+			(xy 73.66 54.61) (xy 83.82 54.61)
 		)
 		(stroke
 			(width 0)
@@ -258,6 +278,26 @@
 			(type default)
 		)
 		(uuid "8e61c425-0e21-4734-8ef3-74551c0c9599")
+	)
+	(wire
+		(pts
+			(xy 73.66 99.06) (xy 83.82 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8fe9d6c3-c1aa-4f91-8fa9-c31b44ac07e1")
+	)
+	(wire
+		(pts
+			(xy 73.66 104.14) (xy 83.82 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "913696f0-8ef9-438c-99bd-1398d36536c9")
 	)
 	(wire
 		(pts
@@ -291,7 +331,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 110.49) (xy 83.82 110.49)
+			(xy 73.66 95.25) (xy 83.82 95.25)
 		)
 		(stroke
 			(width 0)
@@ -311,7 +351,17 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 107.95) (xy 83.82 107.95)
+			(xy 109.22 165.1) (xy 110.49 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab757191-28eb-43f5-ac1e-92cb9cfbbcb7")
+	)
+	(wire
+		(pts
+			(xy 73.66 92.71) (xy 83.82 92.71)
 		)
 		(stroke
 			(width 0)
@@ -321,7 +371,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 104.14) (xy 83.82 104.14)
+			(xy 73.66 88.9) (xy 83.82 88.9)
 		)
 		(stroke
 			(width 0)
@@ -351,7 +401,27 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 74.93) (xy 83.82 74.93)
+			(xy 62.23 25.4) (xy 72.39 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b781f329-6bf6-41fe-a9df-149b4f4da4a1")
+	)
+	(wire
+		(pts
+			(xy 73.66 101.6) (xy 83.82 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9c536f0-28ce-49a3-a683-bf0fa52789c3")
+	)
+	(wire
+		(pts
+			(xy 73.66 59.69) (xy 83.82 59.69)
 		)
 		(stroke
 			(width 0)
@@ -361,7 +431,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 72.39) (xy 83.82 72.39)
+			(xy 73.66 57.15) (xy 83.82 57.15)
 		)
 		(stroke
 			(width 0)
@@ -371,7 +441,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 82.55) (xy 83.82 82.55)
+			(xy 73.66 67.31) (xy 83.82 67.31)
 		)
 		(stroke
 			(width 0)
@@ -389,19 +459,29 @@
 		)
 		(uuid "cf0fcfb3-a0ea-48d1-ac03-4d28fd475b83")
 	)
-	(bus
+	(wire
 		(pts
-			(xy 106.68 162.56) (xy 106.68 165.1)
+			(xy 62.23 22.86) (xy 72.39 22.86)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d619696d-a4ab-49e4-bbc3-539d10bdeb57")
+		(uuid "da4c34dd-4cae-449a-b56f-6f4ed2919d30")
 	)
 	(wire
 		(pts
-			(xy 73.66 96.52) (xy 83.82 96.52)
+			(xy 62.23 35.56) (xy 72.39 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc883307-f7f2-4277-a7b2-8010a8fb4385")
+	)
+	(wire
+		(pts
+			(xy 73.66 81.28) (xy 83.82 81.28)
 		)
 		(stroke
 			(width 0)
@@ -411,7 +491,7 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 165.1) (xy 110.49 165.1)
+			(xy 109.22 167.64) (xy 110.49 167.64)
 		)
 		(stroke
 			(width 0)
@@ -459,8 +539,19 @@
 		)
 		(uuid "00aec5e2-ee83-4044-9ff3-8efb65cd1086")
 	)
+	(label "SPI_MISO"
+		(at 83.82 78.74 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "077c7fba-9409-4510-b2c5-2a9d2fddf582")
+	)
 	(label "SPI_RESET"
-		(at 76.2 101.6 0)
+		(at 76.2 86.36 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -493,7 +584,7 @@
 		(uuid "1812bba9-a2bf-4206-8206-b45fd04964f7")
 	)
 	(label "BT_4"
-		(at 76.2 74.93 0)
+		(at 76.2 59.69 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -504,7 +595,7 @@
 		(uuid "189ab64a-796c-474d-8f0a-90047d1b2748")
 	)
 	(label "SPI_DC"
-		(at 76.2 104.14 0)
+		(at 76.2 88.9 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -515,7 +606,7 @@
 		(uuid "2058722b-1e7b-446d-845e-5ddaf961d6bc")
 	)
 	(label "ENCODER_B"
-		(at 76.2 85.09 0)
+		(at 76.2 69.85 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -524,6 +615,17 @@
 			(justify left bottom)
 		)
 		(uuid "2bab841e-022b-4633-90b9-faec056dc777")
+	)
+	(label "USB_DP"
+		(at 66.04 25.4 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "328832d5-6b6a-4fae-98ec-68985253ed87")
 	)
 	(label "ENCODER_BT"
 		(at 86.36 147.32 0)
@@ -536,8 +638,19 @@
 		)
 		(uuid "32e0bc3b-3e93-4630-8e07-14553a17a71f")
 	)
+	(label "USB_INT_N"
+		(at 66.04 35.56 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3598999c-8dc2-464d-8596-d6c7ffb632b7")
+	)
 	(label "USB_DM"
-		(at 76.2 110.49 0)
+		(at 76.2 95.25 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -559,7 +672,7 @@
 		(uuid "41d09ec1-fb56-439a-854d-d521ffbf044f")
 	)
 	(label "BT_3"
-		(at 76.2 72.39 0)
+		(at 76.2 57.15 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -569,8 +682,8 @@
 		)
 		(uuid "4347ee8e-301e-4e3c-b94e-65f53b38488e")
 	)
-	(label "SPI_MISO"
-		(at 110.49 167.64 0)
+	(label "USB_SDA"
+		(at 76.2 101.6 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -578,10 +691,21 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "4c370b5c-97e5-4f1a-8c9b-2dd39a212ae4")
+		(uuid "46f02b24-1197-4e44-b8f3-2336a4fc2edc")
+	)
+	(label "USB_SCL"
+		(at 66.04 29.21 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5ad70c2a-214d-40cc-94f2-426ffbd6ce0e")
 	)
 	(label "SPI_SCK"
-		(at 76.2 96.52 0)
+		(at 76.2 81.28 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -614,7 +738,7 @@
 		(uuid "78a7cccb-0107-4169-ad5d-58a0e97ca558")
 	)
 	(label "SPI_MOSI"
-		(at 110.49 165.1 0)
+		(at 110.49 167.64 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -635,19 +759,8 @@
 		)
 		(uuid "8612d4de-9b0b-4e89-9a8c-b5565109b1cd")
 	)
-	(label "SPI_MOSI"
-		(at 76.2 93.98 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "86bc0ecf-d6df-4252-87c2-f7f60338fd68")
-	)
 	(label "BT_2"
-		(at 76.2 69.85 0)
+		(at 76.2 54.61 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -657,8 +770,8 @@
 		)
 		(uuid "9cf07820-daac-4ec6-9160-6427d0e60bbc")
 	)
-	(label "SPI_MISO"
-		(at 76.2 91.44 0)
+	(label "SPI_MOSI"
+		(at 76.2 76.2 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -669,7 +782,7 @@
 		(uuid "9e32fb93-d4e4-463d-a40d-b1900a5c6023")
 	)
 	(label "USB_DP"
-		(at 76.2 107.95 0)
+		(at 76.2 92.71 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -679,8 +792,30 @@
 		)
 		(uuid "a0138f26-ab3f-48e5-a190-5b4f5c27cdea")
 	)
+	(label "USB_SDA"
+		(at 66.04 31.75 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a092ea2f-1647-422f-a950-57a42f19360f")
+	)
+	(label "USB_SCL"
+		(at 76.2 99.06 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a1ae74ed-8255-4679-b2ae-07e3cd7d403b")
+	)
 	(label "ENCODER_A"
-		(at 76.2 82.55 0)
+		(at 76.2 67.31 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -691,7 +826,7 @@
 		(uuid "a2330883-cf16-4d20-9d87-23ba2ec8d17c")
 	)
 	(label "SPI_CS"
-		(at 76.2 99.06 0)
+		(at 76.2 83.82 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -700,6 +835,17 @@
 			(justify left bottom)
 		)
 		(uuid "ac91197d-4918-445c-8d70-88b6eb171ebc")
+	)
+	(label "USB_INT_N"
+		(at 76.2 104.14 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b02e169b-90d8-421a-b2c5-abd485ce8fae")
 	)
 	(label "BT_1"
 		(at 86.36 130.81 0)
@@ -713,7 +859,7 @@
 		(uuid "b3ac51cf-f975-4269-9cc1-a80f2166abdc")
 	)
 	(label "SCREEN_BACKLIGHT_EN"
-		(at 76.2 78.74 0)
+		(at 76.2 63.5 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -722,6 +868,28 @@
 			(justify left bottom)
 		)
 		(uuid "d0c20b65-4c96-4349-a19c-66cae0fca4a7")
+	)
+	(label "SPI_MISO"
+		(at 110.49 165.1 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d6a97fbe-c9fc-4734-a553-bc4e479662eb")
+	)
+	(label "USB_DM"
+		(at 66.04 22.86 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e6a0f2f2-672d-4b95-9b82-469fc108a0b6")
 	)
 	(label "BT_4"
 		(at 86.36 138.43 0)
@@ -757,7 +925,7 @@
 		(uuid "f11097c6-e7dc-475a-b1ff-0145073c4888")
 	)
 	(label "BT_1"
-		(at 76.2 67.31 0)
+		(at 76.2 52.07 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -768,7 +936,7 @@
 		(uuid "f3bc84da-24b7-4756-bec4-ebac86042f50")
 	)
 	(label "ENCODER_BT"
-		(at 76.2 87.63 0)
+		(at 76.2 72.39 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -904,8 +1072,8 @@
 		)
 	)
 	(sheet
-		(at 41.91 46.99)
-		(size 19.05 7.62)
+		(at 43.18 20.32)
+		(size 19.05 21.59)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -916,7 +1084,7 @@
 		)
 		(uuid "6a8f7395-3ccf-431e-bc54-d9f688783b5c")
 		(property "Sheetname" "usb_input"
-			(at 41.91 46.2784 0)
+			(at 43.18 19.6084 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -925,7 +1093,7 @@
 			)
 		)
 		(property "Sheetfile" "usb_input.kicad_sch"
-			(at 41.91 55.1946 0)
+			(at 43.18 42.4946 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -933,25 +1101,55 @@
 				(justify left top)
 			)
 		)
-		(pin "USB_DM" input
-			(at 60.96 52.07 0)
+		(pin "USB_DM" bidirectional
+			(at 62.23 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "3e637019-82f7-4562-8586-5350874b9b76")
+			(uuid "14f1f87f-1771-4b39-8db4-45bf2ddd6065")
 		)
-		(pin "USB_DP" input
-			(at 60.96 49.53 0)
+		(pin "USB_DP" bidirectional
+			(at 62.23 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "82ae84e5-c5e7-4720-8b10-75a5368836d9")
+			(uuid "d2e8c01d-6bf1-492f-b620-d0305cb2724b")
+		)
+		(pin "USB_SCL" input
+			(at 62.23 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "f681770c-369d-477a-b781-fa3d0926253f")
+		)
+		(pin "USB_INT_N" bidirectional
+			(at 62.23 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "077d2740-184f-4aed-b3a1-6ab27ba22eec")
+		)
+		(pin "USB_SDA" bidirectional
+			(at 62.23 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "3816d201-0943-46b3-95ca-bbfb8f9822e9")
 		)
 		(instances
 			(project "pocketPSU_elec_main"
@@ -962,8 +1160,8 @@
 		)
 	)
 	(sheet
-		(at 25.4 64.77)
-		(size 48.26 49.53)
+		(at 25.4 49.53)
+		(size 48.26 62.23)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -974,7 +1172,7 @@
 		)
 		(uuid "725044cc-ecb2-459a-b2bb-596cb099bd1f")
 		(property "Sheetname" "microcontroller"
-			(at 25.4 64.0584 0)
+			(at 25.4 48.8184 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -983,7 +1181,7 @@
 			)
 		)
 		(property "Sheetfile" "microcontroller.kicad_sch"
-			(at 25.4 114.8846 0)
+			(at 25.4 112.3446 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -992,7 +1190,7 @@
 			)
 		)
 		(pin "USB_DM" input
-			(at 73.66 110.49 0)
+			(at 73.66 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1002,7 +1200,7 @@
 			(uuid "5a430fe1-076d-4c38-82e6-93d6d2652b05")
 		)
 		(pin "BT_1" input
-			(at 73.66 67.31 0)
+			(at 73.66 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1012,7 +1210,7 @@
 			(uuid "29511b09-28ea-49e1-83a9-8ad1080c4333")
 		)
 		(pin "BT_2" input
-			(at 73.66 69.85 0)
+			(at 73.66 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1022,7 +1220,7 @@
 			(uuid "0ec47d3f-2b6d-4642-b68f-d59a7ddbb04c")
 		)
 		(pin "BT_3" input
-			(at 73.66 72.39 0)
+			(at 73.66 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1032,7 +1230,7 @@
 			(uuid "7a78617e-12c0-4512-aec5-7d7fd7cd827e")
 		)
 		(pin "BT_4" input
-			(at 73.66 74.93 0)
+			(at 73.66 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1042,7 +1240,7 @@
 			(uuid "b252ff86-e3e3-44ef-8a70-29f5b87d8238")
 		)
 		(pin "SCREEN_BACKLIGHT_EN" input
-			(at 73.66 78.74 0)
+			(at 73.66 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1052,7 +1250,7 @@
 			(uuid "5d7409b4-db84-4ef7-a0f6-7499568714f5")
 		)
 		(pin "USB_DP" input
-			(at 73.66 107.95 0)
+			(at 73.66 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1062,7 +1260,7 @@
 			(uuid "b30ea1e5-1ed2-416f-9a23-623f8a6d8d79")
 		)
 		(pin "ENCODER_BT" input
-			(at 73.66 87.63 0)
+			(at 73.66 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1072,7 +1270,7 @@
 			(uuid "68422de8-22b7-4a19-a7bc-10e515dd55a7")
 		)
 		(pin "ENCODER_A" input
-			(at 73.66 82.55 0)
+			(at 73.66 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1082,7 +1280,7 @@
 			(uuid "872b564c-b78b-44bb-8c67-98924668b19c")
 		)
 		(pin "ENCODER_B" input
-			(at 73.66 85.09 0)
+			(at 73.66 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1091,18 +1289,8 @@
 			)
 			(uuid "fc4e11e3-9701-42ea-87dd-61b64f6cefc6")
 		)
-		(pin "SPI_MOSI" output
-			(at 73.66 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "f48c7d28-70fc-4ae1-9e96-652a7d0a0375")
-		)
 		(pin "SPI_SCK" output
-			(at 73.66 96.52 0)
+			(at 73.66 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1112,7 +1300,7 @@
 			(uuid "4a82cdcf-79b9-4802-85a0-64a6e0989610")
 		)
 		(pin "SPI_CS" output
-			(at 73.66 99.06 0)
+			(at 73.66 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1122,7 +1310,7 @@
 			(uuid "70438ecc-bc04-4ab4-8a0e-f338fa9a94a1")
 		)
 		(pin "SPI_RESET" output
-			(at 73.66 101.6 0)
+			(at 73.66 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1132,7 +1320,7 @@
 			(uuid "ba0ede1c-b2c2-4b3d-8ffd-e75e2b881086")
 		)
 		(pin "SPI_DC" output
-			(at 73.66 104.14 0)
+			(at 73.66 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1141,15 +1329,55 @@
 			)
 			(uuid "22b44be4-2f7f-404d-8c54-fa7af4571681")
 		)
-		(pin "SPI_MISO" output
-			(at 73.66 93.98 0)
+		(pin "USB_SCL" output
+			(at 73.66 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "5dec2108-560f-4c8f-85d5-8077ce055d3c")
+			(uuid "d6eec75f-2235-41fc-9735-6244a2759f06")
+		)
+		(pin "USB_SDA" bidirectional
+			(at 73.66 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "e41d57a9-613a-4778-b8bb-395c744ab2d2")
+		)
+		(pin "USB_INT_N" bidirectional
+			(at 73.66 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "42e5c20b-4df3-48d6-9125-fc1c6fa900ba")
+		)
+		(pin "SPI_MISO" output
+			(at 73.66 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "d7a07e93-ce3c-4b0c-8296-2f95c8ca9391")
+		)
+		(pin "SPI_MOSI" input
+			(at 73.66 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "0327aba8-562e-4f48-828d-ea38cc3a7b41")
 		)
 		(instances
 			(project "pocketPSU_elec_main"
@@ -1369,26 +1597,6 @@
 				(justify right)
 			)
 			(uuid "073d3307-83cd-4009-ba8f-3863714bcf38")
-		)
-		(pin "GND" input
-			(at 83.82 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "4ac41cab-9cab-46fa-878a-f0efcd0f256b")
-		)
-		(pin "+3.3V" input
-			(at 83.82 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "8b23757f-eb6f-4a9e-a675-d96f38c6a5f1")
 		)
 		(pin "BT_3" output
 			(at 83.82 135.89 0)
