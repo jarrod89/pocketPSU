@@ -1,0 +1,7 @@
+* A dual opamp ngspice model
+* file name: LM358-dual.lib
+.subckt LM358 1OUT 1IN- 1IN+ VEE 2IN+ 2IN- 2OUT VCC
+.include Lm358.mod
+XU1A 1IN+ 1IN- VCC VEE 1OUT LM358/NS
+XU1B 2IN+ 2IN- VCC VEE 2OUT LM358/NS
+.ends
