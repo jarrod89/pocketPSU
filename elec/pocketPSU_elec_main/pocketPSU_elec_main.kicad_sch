@@ -510,7 +510,7 @@
 		(uuid "faad09ea-9779-4c28-986c-785343008327")
 	)
 	(text_box "Still need to connect DC/RESET\n\n"
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(at 110.49 180.34 0)
 		(size 29.21 6.35)
 		(stroke
