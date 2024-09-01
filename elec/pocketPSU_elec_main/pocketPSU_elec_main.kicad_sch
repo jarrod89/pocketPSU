@@ -1394,7 +1394,7 @@
 		)
 	)
 	(sheet
-		(at 222.25 39.37)
+		(at 226.06 55.88)
 		(size 33.02 24.13)
 		(fields_autoplaced yes)
 		(stroke
@@ -1406,7 +1406,7 @@
 		)
 		(uuid "7ebff7eb-5619-4dc9-8816-ce2d76104323")
 		(property "Sheetname" "out_1"
-			(at 222.25 38.6584 0)
+			(at 226.06 55.1684 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1415,7 +1415,7 @@
 			)
 		)
 		(property "Sheetfile" "out_1.kicad_sch"
-			(at 222.25 64.0846 0)
+			(at 226.06 80.5946 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1424,7 +1424,7 @@
 			)
 		)
 		(property "Field2" ""
-			(at 222.25 39.37 0)
+			(at 226.06 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1441,7 +1441,7 @@
 		)
 	)
 	(sheet
-		(at 255.27 13.97)
+		(at 180.34 39.37)
 		(size 33.02 22.86)
 		(fields_autoplaced yes)
 		(stroke
@@ -1453,7 +1453,7 @@
 		)
 		(uuid "9bdbc701-93a8-4c73-b54e-1590af0494ca")
 		(property "Sheetname" "battery_input"
-			(at 255.27 13.2584 0)
+			(at 180.34 38.6584 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1462,7 +1462,7 @@
 			)
 		)
 		(property "Sheetfile" "battery_input.kicad_sch"
-			(at 255.27 37.4146 0)
+			(at 180.34 62.8146 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1517,7 +1517,7 @@
 		)
 	)
 	(sheet
-		(at 231.14 58.42)
+		(at 173.99 76.2)
 		(size 38.1 27.94)
 		(fields_autoplaced yes)
 		(stroke
@@ -1529,7 +1529,7 @@
 		)
 		(uuid "b7f6231d-788f-4063-b532-0cecc4feadb2")
 		(property "Sheetname" "usb_coms"
-			(at 231.14 57.7084 0)
+			(at 173.99 75.4884 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1538,7 +1538,7 @@
 			)
 		)
 		(property "Sheetfile" "usb_coms.kicad_sch"
-			(at 231.14 86.9446 0)
+			(at 173.99 104.7246 0)
 			(effects
 				(font
 					(size 1.27 1.27)
