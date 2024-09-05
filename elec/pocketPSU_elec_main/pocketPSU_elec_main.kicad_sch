@@ -144,16 +144,6 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 27.94) (xy 97.79 27.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0e388f35-9cd6-47d1-b992-4437cfc93c7f")
-	)
-	(wire
-		(pts
 			(xy 69.85 49.53) (xy 97.79 49.53)
 		)
 		(stroke
@@ -222,6 +212,16 @@
 		)
 		(uuid "3dfea27b-9e63-4ef6-96a6-ef3e6df5d992")
 	)
+	(wire
+		(pts
+			(xy 69.85 30.48) (xy 97.79 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "41286953-cfa3-48c8-890f-0cbf7ab39513")
+	)
 	(bus
 		(pts
 			(xy 93.98 59.69) (xy 93.98 62.23)
@@ -241,6 +241,16 @@
 			(type default)
 		)
 		(uuid "43112121-616a-4b75-be7b-c5cd111507e9")
+	)
+	(wire
+		(pts
+			(xy 69.85 25.4) (xy 97.79 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48f8c3c3-19b8-45a6-b657-38ad6aa97f0b")
 	)
 	(bus
 		(pts
@@ -264,16 +274,6 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 25.4) (xy 97.79 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "681c7852-3a25-49b8-be78-decf0c5253ac")
-	)
-	(wire
-		(pts
 			(xy 69.85 43.18) (xy 97.79 43.18)
 		)
 		(stroke
@@ -281,6 +281,16 @@
 			(type default)
 		)
 		(uuid "6e51bb31-01e5-4c63-bb50-d0293733d17b")
+	)
+	(wire
+		(pts
+			(xy 69.85 33.02) (xy 97.79 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e63d1bf-e1bd-4690-afe9-e0da7eb5f3ab")
 	)
 	(bus
 		(pts
@@ -310,7 +320,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "7ffd0dab-bc5e-4399-b766-b599a5c92061")
+		(uuid "78c9d188-6223-4415-b382-4c277ccee6c7")
 	)
 	(wire
 		(pts
@@ -364,16 +374,6 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 33.02) (xy 97.79 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a8a9d43f-3265-4abd-9b9f-74e49f8f6ae6")
-	)
-	(wire
-		(pts
 			(xy 69.85 77.47) (xy 80.01 77.47)
 		)
 		(stroke
@@ -381,16 +381,6 @@
 			(type default)
 		)
 		(uuid "afe12571-7cdd-40e0-bac5-eaee4dd49138")
-	)
-	(wire
-		(pts
-			(xy 69.85 30.48) (xy 97.79 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b0842f8a-51e0-453a-b28d-301aa45adcba")
 	)
 	(wire
 		(pts
@@ -461,6 +451,16 @@
 			(type default)
 		)
 		(uuid "dc883307-f7f2-4277-a7b2-8010a8fb4385")
+	)
+	(wire
+		(pts
+			(xy 69.85 27.94) (xy 97.79 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e359de23-b474-4f35-9a33-df9c1542f51c")
 	)
 	(wire
 		(pts
@@ -684,7 +684,7 @@
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "0568e6d4-1671-4580-831e-344fe0efb146")
 		(property "Reference" "H3"
@@ -748,7 +748,7 @@
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "3934ea48-f51f-4549-aee8-ce03dd8df3ab")
 		(property "Reference" "H4"
@@ -812,7 +812,7 @@
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "67412a11-2fd6-43a4-89e1-36aba9a0e28f")
 		(property "Reference" "H1"
@@ -876,7 +876,7 @@
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "df5ac6b2-2dbb-4a40-9058-e368392173a3")
 		(property "Reference" "H2"
@@ -1326,7 +1326,7 @@
 			(uuid "98f87d8b-675b-4b0a-a07d-78f8d9e2886c")
 		)
 		(pin "BT_ON_CH2" input
-			(at 69.85 22.86 0)
+			(at 69.85 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1346,7 +1346,7 @@
 			(uuid "ffd4556e-3e2c-4622-b7fd-f1cc675cad4f")
 		)
 		(pin "BT_ON_CH1" input
-			(at 69.85 27.94 0)
+			(at 69.85 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1517,44 +1517,6 @@
 		)
 	)
 	(sheet
-		(at 173.99 76.2)
-		(size 38.1 27.94)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "b7f6231d-788f-4063-b532-0cecc4feadb2")
-		(property "Sheetname" "usb_coms"
-			(at 173.99 75.4884 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "usb_coms.kicad_sch"
-			(at 173.99 104.7246 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "pocketPSU_elec_main"
-				(path "/439011d5-4dd5-4d65-a9bd-b0be402d54a5"
-					(page "6")
-				)
-			)
-		)
-	)
-	(sheet
 		(at 97.79 20.32)
 		(size 58.42 58.42)
 		(fields_autoplaced yes)
@@ -1585,7 +1547,7 @@
 			)
 		)
 		(pin "BT_SEL_CH1" output
-			(at 97.79 22.86 180)
+			(at 97.79 25.4 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1615,7 +1577,7 @@
 			(uuid "44a55fd6-1ea8-4d66-a579-535e63d0d676")
 		)
 		(pin "BT_ON_CH1" output
-			(at 97.79 25.4 180)
+			(at 97.79 22.86 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1645,7 +1607,7 @@
 			(uuid "770d362f-9c2d-4ca7-ac7c-a896d381ad32")
 		)
 		(pin "BT_ON_CH2" output
-			(at 97.79 30.48 180)
+			(at 97.79 27.94 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1665,7 +1627,7 @@
 			(uuid "d7b7d272-768f-4ae5-8c59-db3c59a0bf4e")
 		)
 		(pin "BT_SEL_CH2" output
-			(at 97.79 27.94 180)
+			(at 97.79 30.48 180)
 			(effects
 				(font
 					(size 1.27 1.27)

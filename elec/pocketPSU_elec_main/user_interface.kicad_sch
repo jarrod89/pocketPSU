@@ -2227,6 +2227,12 @@
 		(uuid "8e91e6f3-57c8-4618-8eb0-a45af06e209a")
 	)
 	(junction
+		(at 148.59 35.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8f165c0c-70db-44fe-a6ec-728a0c8daca3")
+	)
+	(junction
 		(at 43.18 129.54)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2261,6 +2267,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b94139c1-576a-4a3d-a36a-19aebb8704ef")
+	)
+	(junction
+		(at 148.59 21.59)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c8cc1a53-b6c8-4b33-beeb-3f581df2ca78")
 	)
 	(junction
 		(at 191.77 129.54)
@@ -2794,6 +2806,16 @@
 	)
 	(wire
 		(pts
+			(xy 139.7 21.59) (xy 148.59 21.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2c710807-6ec3-4195-8048-63acdd1bbb8d")
+	)
+	(wire
+		(pts
 			(xy 105.41 129.54) (xy 105.41 125.73)
 		)
 		(stroke
@@ -2911,6 +2933,16 @@
 			(type default)
 		)
 		(uuid "3d4866a9-0195-4984-9da9-8c15e10fec23")
+	)
+	(wire
+		(pts
+			(xy 139.7 31.75) (xy 139.7 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e062ba6-6f0c-433e-8bff-de4c2f00e90a")
 	)
 	(wire
 		(pts
@@ -3044,6 +3076,16 @@
 	)
 	(wire
 		(pts
+			(xy 139.7 35.56) (xy 148.59 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4abac26e-0a0e-4b84-9520-474c0a4bb7f6")
+	)
+	(wire
+		(pts
 			(xy 80.01 49.53) (xy 80.01 52.07)
 		)
 		(stroke
@@ -3054,7 +3096,7 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 31.75) (xy 148.59 38.1)
+			(xy 148.59 31.75) (xy 148.59 35.56)
 		)
 		(stroke
 			(width 0)
@@ -3374,6 +3416,16 @@
 	)
 	(wire
 		(pts
+			(xy 139.7 26.67) (xy 139.7 21.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d3f00df-a947-4ecd-8f0b-aa5c9ec074c4")
+	)
+	(wire
+		(pts
 			(xy 232.41 41.91) (xy 232.41 39.37)
 		)
 		(stroke
@@ -3511,6 +3563,16 @@
 			(type default)
 		)
 		(uuid "a1adf013-55bc-4b4e-a4d3-e6f148aa5ccd")
+	)
+	(wire
+		(pts
+			(xy 148.59 35.56) (xy 148.59 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a1d975a9-b261-442e-8b59-98f941209b5b")
 	)
 	(wire
 		(pts
@@ -4162,6 +4224,44 @@
 		)
 		(uuid "fd5ccf6f-5bb1-406d-8fb7-92ae06c1cc7b")
 	)
+	(text_box "White LED"
+		(exclude_from_sim no)
+		(at 231.14 121.92 0)
+		(size 8.89 5.08)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "1250db48-09a8-44a0-ba5d-175c53cce16b")
+	)
+	(text_box "White LED"
+		(exclude_from_sim no)
+		(at 259.08 121.92 0)
+		(size 8.89 5.08)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "614fddfc-8d20-4bcf-8e46-3bd0198c7bae")
+	)
 	(label "SPI_MOSI"
 		(at 236.22 52.07 0)
 		(fields_autoplaced yes)
@@ -4592,6 +4692,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" "C28323"
+			(at 186.69 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "55707adf-4648-4760-b230-4aba8d26ed59")
 		)
@@ -4662,6 +4771,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" "C15195"
+			(at 120.65 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "c4109843-79a5-40ca-ae74-4c82df1f8a83")
 		)
@@ -4684,7 +4802,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "0b9c0879-cde6-4f21-8d91-9eff07f29a09")
 		(property "Reference" "TPENCODER_B1"
@@ -4900,7 +5018,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "124d3acd-062f-4ef1-a290-c364cc1c7e19")
 		(property "Reference" "TPMOSI1"
@@ -5079,6 +5197,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" "C25744	"
+			(at 48.26 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "0209f863-6562-4164-a0b6-91cbb5177eae")
 		)
@@ -5207,6 +5334,15 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
+			(at 252.73 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C25076"
 			(at 252.73 143.51 0)
 			(effects
 				(font
@@ -5417,6 +5553,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" "C25076"
+			(at 226.06 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b131f175-47f6-4d7d-91c0-f0f308ea4c7b")
 		)
@@ -5427,6 +5572,85 @@
 			(project "pocketPSU_elec_main"
 				(path "/439011d5-4dd5-4d65-a9bd-b0be402d54a5/cbe29d96-4bd9-4dd2-be02-96003f32f1da"
 					(reference "R19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 139.7 29.21 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "33c24f33-1548-4fa5-aba0-1f3e56283e8d")
+		(property "Reference" "R21"
+			(at 142.24 27.9399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10R"
+			(at 142.24 30.4799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 139.7 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 139.7 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 139.7 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C25077"
+			(at 139.7 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4fbc53fa-6cf6-468a-8449-54aca44b30e3")
+		)
+		(pin "2"
+			(uuid "fe2ef5d4-c82f-4038-9337-730e8709129d")
+		)
+		(instances
+			(project "pocketPSU_elec_main"
+				(path "/439011d5-4dd5-4d65-a9bd-b0be402d54a5/cbe29d96-4bd9-4dd2-be02-96003f32f1da"
+					(reference "R21")
 					(unit 1)
 				)
 			)
@@ -5608,7 +5832,7 @@
 				)
 			)
 		)
-		(property "Value" "10K"
+		(property "Value" "100R"
 			(at 92.71 58.42 90)
 			(effects
 				(font
@@ -5636,6 +5860,15 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 92.71 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C25076"
+			(at 92.71 60.96 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5705,6 +5938,15 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
+			(at 105.41 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C25744	"
 			(at 105.41 123.19 0)
 			(effects
 				(font
@@ -5866,6 +6108,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" "C15195"
+			(at 82.55 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "9d84d254-0ad3-4f14-a046-77381a8062b2")
 		)
@@ -6011,6 +6262,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 43.18 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C15195"
 			(at 43.18 140.97 0)
 			(effects
 				(font
@@ -6353,6 +6613,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" "C15195"
+			(at 99.06 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "3593b563-b376-4e5b-a39a-376dfb289d09")
 		)
@@ -6375,7 +6644,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "71314d5e-b065-46c2-a47d-c298a1534504")
 		(property "Reference" "TPCD1"
@@ -6554,6 +6823,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" "C25744	"
+			(at 67.31 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "e7d947e0-8d54-4d55-a4fb-da8c60205b0f")
 		)
@@ -6642,7 +6920,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "7edc4e5a-3611-4daa-bdb9-87c9f235f7fd")
 		(property "Reference" "TPMISO1"
@@ -6707,7 +6985,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "7eebbaf9-75ee-4e62-869c-b0271614a6bf")
 		(property "Reference" "TPENCODER_A1"
@@ -7086,6 +7364,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" "C15195"
+			(at 55.88 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "832a76be-e7d9-4861-ad4c-09c55d18270b")
 		)
@@ -7156,7 +7443,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "C965864"
+		(property "LCSC Part" "C2290"
 			(at 262.89 130.81 0)
 			(effects
 				(font
@@ -7199,7 +7486,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4.7R"
+		(property "Value" "10R"
 			(at 151.13 30.4799 0)
 			(effects
 				(font
@@ -7227,6 +7514,15 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
+			(at 148.59 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C25077"
 			(at 148.59 29.21 0)
 			(effects
 				(font
@@ -7297,6 +7593,15 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
+			(at 27.94 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C25744	"
 			(at 27.94 123.19 0)
 			(effects
 				(font
@@ -7433,6 +7738,15 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
+			(at 91.44 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C25744	"
 			(at 91.44 50.8 0)
 			(effects
 				(font
@@ -7594,6 +7908,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" "C25744	"
+			(at 67.31 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "64ce59c0-5c46-4adc-800f-09fd6817410c")
 		)
@@ -7664,6 +7987,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" "C15195"
+			(at 43.18 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "4cd6cb8d-6c41-4504-8646-347b5575c4cd")
 		)
@@ -7686,7 +8018,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "b20135ec-8c2d-40be-99c6-cd707c87a2ab")
 		(property "Reference" "TPSCK1"
@@ -7817,7 +8149,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "b656db9e-e2c8-4e11-a6a7-0a60c6cfbbf2")
 		(property "Reference" "TPLEDK1"
@@ -8064,6 +8396,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" "C25744	"
+			(at 143.51 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "2e1c9104-dc2e-42fd-b799-689a2141cfb8")
 		)
@@ -8086,7 +8427,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "c45f2c21-8377-47e2-9ab4-6fdc948726b4")
 		(property "Reference" "TPCS1"
@@ -8199,6 +8540,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" "C25744	"
+			(at 181.61 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "1fba0425-c3a9-495a-a5ee-1cfe62a10f33")
 		)
@@ -8298,7 +8648,7 @@
 				)
 			)
 		)
-		(property "Value" "10K"
+		(property "Value" "100R"
 			(at 49.53 58.42 90)
 			(effects
 				(font
@@ -8333,6 +8683,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" "C25076"
+			(at 49.53 60.96 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "bf4fe043-94d9-4f94-9e5f-2be590c0e554")
 		)
@@ -8355,7 +8714,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "ceace8e6-3c4c-4702-8a2c-9b0eb4ae52b6")
 		(property "Reference" "J3"
@@ -8569,7 +8928,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "C965864"
+		(property "LCSC Part" "C2290"
 			(at 236.22 130.81 0)
 			(effects
 				(font
@@ -8640,6 +8999,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 196.85 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C15195"
 			(at 196.85 140.97 0)
 			(effects
 				(font
@@ -9147,6 +9515,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" "C15195"
+			(at 158.75 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "be60601b-c024-43ba-a207-88a2752677f8")
 		)
@@ -9169,7 +9546,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "f39490e9-79b7-4ad2-9cbb-18e4284c8593")
 		(property "Reference" "TPRESET1"
