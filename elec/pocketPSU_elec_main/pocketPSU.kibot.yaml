@@ -13,11 +13,7 @@ global:
   output: '%f-%i_%r.%x'
 
 import:
-  - ../configs/Elecrow.kibot.yaml
-  - ../configs/FusionPCB.kibot.yaml
-  - ../configs/JLCPCB.kibot.yaml
-  - ../configs/P-Ban.kibot.yaml
-  - ../configs/PCBWay.kibot.yaml
+  - JLCPCB.kibot.yaml
 
 filters:
  - name: 'exclude_any'
