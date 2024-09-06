@@ -85,7 +85,7 @@ outputs:
     type: ibom
     dir: BoM
     options:
-      extra-fields: 'LCSC Part'
+      extra_fields: 'LCSC Part'
       blacklist: 'DNF*'
 
   # - name: 'bom_html'
