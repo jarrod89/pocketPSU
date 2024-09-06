@@ -1,4 +1,4 @@
-name: "Variants demo using GitHub actions and quick-start"
+name: "KiBot GitHub action setup for pocketPSU"
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
@@ -20,8 +20,8 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  quick:
-    name: "Quick Start (action)"
+  kibot:
+    name: "KiBot"
     runs-on: ubuntu-latest
 
     steps:
