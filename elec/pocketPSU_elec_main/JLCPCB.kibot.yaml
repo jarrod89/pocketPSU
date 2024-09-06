@@ -110,8 +110,8 @@ outputs:
         - field: References
           name: Designator
         - Footprint
-        - field: 'LCSC#'
-          name: 'LCSC Part #'
+        - field: 'LCSC Part'
+          name: 'JLCPCB Part #'
       csv:
         hide_pcb_info: true
         hide_stats_info: true
