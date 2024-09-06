@@ -36,6 +36,8 @@ jobs:
       with:
         # Required - kibot config file
         config: elec/pocketPSU_elec_main/pocketPSU.kibot.yaml
+        schema: elec/pocketPSU_elec_main/pocketPSU_elec_main.kicad_sch
+        board: elec/pocketPSU_elec_main/pocketPSU_elec_main.kicad_pcb
 
     # - name: Run KiBot
     #   uses: INTI-CMNB/KiBot@v2_k8
