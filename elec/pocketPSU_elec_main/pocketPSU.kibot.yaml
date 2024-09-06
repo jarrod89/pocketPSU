@@ -14,7 +14,7 @@ global:
   output: '%f-%i_%r.%x'
 
 import:
-  - JLCPCB.kibot.yaml
+  - JLCPCB
 
 # filters:
 #  - name: 'exclude_any'
@@ -85,6 +85,7 @@ outputs:
     type: ibom
     dir: BoM
     options:
+      extra-fields: 'LCSC Part'
       blacklist: 'DNF*'
 
   # - name: 'bom_html'
@@ -145,7 +146,7 @@ outputs:
     dir: PCB/green
     options:
       format: jpg
-      show_components: none
+      show_components: all
       dpi: 600
 
   - name: pcb_bot_g
@@ -155,7 +156,7 @@ outputs:
     options:
       format: jpg
       bottom: True
-      show_components: none
+      show_components: all
       dpi: 600
 
   - name: step
