@@ -4,13 +4,13 @@
 kibot:
   version: 1
 
-filters:
-  - name: only_jlc_parts
-    comment: 'Only parts with JLC (LCSC) code'
-    type: generic
-    include_only:
-      - column: 'LCSC#'
-        regex: '^C\d+'
+# filters:
+#   - name: only_jlc_parts
+#     comment: 'Only parts with JLC (LCSC) code'
+#     type: generic
+#     include_only:
+#       - column: 'LCSC#'
+#         regex: '^C\d+'
 
 variants:
   - name: rotated
@@ -76,7 +76,7 @@ outputs:
     type: position
     dir: JLCPCB
     options:
-      variant: rotated
+      # variant: rotated
       output: '%f_cpl_jlc.%x'
       format: CSV
       units: millimeters

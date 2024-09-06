@@ -39,6 +39,9 @@ jobs:
         schema: elec/pocketPSU_elec_main/pocketPSU_elec_main.kicad_sch
         board: elec/pocketPSU_elec_main/pocketPSU_elec_main.kicad_pcb
         dir: Generated
+        context: .
+        push: true
+        tags: user/app:latest
         cache-from: type=gha
         cache-to: type=gha,mode=max
 
