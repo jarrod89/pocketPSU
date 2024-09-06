@@ -7,11 +7,13 @@ on:
     paths:
       - '*.kicad_sch'
       - '*.kicad_pcb'
+      - '*.kibot.yaml'
       - '.github/workflows/kibot_action_quick_start.yml'
   pull_request:
     paths:
       - '*.kicad_sch'
       - '*.kicad_pcb'
+      - '*.kibot.yaml'
       - '.github/workflows/kibot_action_quick_start.yml'
   repository_dispatch:
     types: [run_qs_gha]
@@ -32,7 +34,13 @@ jobs:
     - name: Run KiBot
       uses: INTI-CMNB/KiBot@v2_k8
       with:
-        quickstart: YES
+        # Required - kibot config file
+        config: elec/pocketPSU_elec_main/pocketPSU.kibot.yaml
+
+    # - name: Run KiBot
+    #   uses: INTI-CMNB/KiBot@v2_k8
+    #   with:
+    #     quickstart: YES
 
     - name: Upload results
       uses: actions/upload-artifact@v4
