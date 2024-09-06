@@ -14,8 +14,7 @@ global:
   output: '%f-%i_%r.%x'
 
 import:
-  - JLCPCB
-    is_external: true
+  - JLCPCB.kibot.yaml
 
 # filters:
 #  - name: 'exclude_any'
