@@ -1,4 +1,5 @@
 # Example KiBot config file
+# Test
 kibot:
   version: 1
 
