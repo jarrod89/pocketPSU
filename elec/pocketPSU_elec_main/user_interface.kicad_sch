@@ -2676,7 +2676,7 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 41.91) (xy 186.69 45.72)
+			(xy 208.28 41.91) (xy 208.28 45.72)
 		)
 		(stroke
 			(width 0)
@@ -3606,7 +3606,7 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 33.02) (xy 186.69 36.83)
+			(xy 208.28 33.02) (xy 208.28 36.83)
 		)
 		(stroke
 			(width 0)
@@ -4639,7 +4639,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 186.69 39.37 0)
+		(at 208.28 39.37 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4648,7 +4648,7 @@
 		(fields_autoplaced yes)
 		(uuid "04cebc71-6115-4777-a7c6-e767e04e95d9")
 		(property "Reference" "C1"
-			(at 189.23 38.1062 0)
+			(at 210.82 38.1062 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4657,7 +4657,7 @@
 			)
 		)
 		(property "Value" "1uF"
-			(at 189.23 40.6462 0)
+			(at 210.82 40.6462 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4666,7 +4666,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 186.69 39.37 0)
+			(at 208.28 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4675,7 +4675,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 186.69 39.37 0)
+			(at 208.28 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4684,7 +4684,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 186.69 39.37 0)
+			(at 208.28 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4693,7 +4693,7 @@
 			)
 		)
 		(property "LCSC Part" "C28323"
-			(at 186.69 39.37 0)
+			(at 208.28 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4938,7 +4938,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0e26d4d6-46e9-48d6-b2f9-73fa762aaf44")
-		(property "Reference" "BTON-OFF1"
+		(property "Reference" "ON-OFF1"
 			(at 181.61 132.08 0)
 			(effects
 				(font
@@ -5005,7 +5005,7 @@
 		(instances
 			(project "pocketPSU_elec_main"
 				(path "/439011d5-4dd5-4d65-a9bd-b0be402d54a5/cbe29d96-4bd9-4dd2-be02-96003f32f1da"
-					(reference "BTON-OFF1")
+					(reference "ON-OFF1")
 					(unit 1)
 				)
 			)
@@ -5980,7 +5980,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4bf12219-8df3-40ab-9e6f-2cc6ddfbb6a8")
-		(property "Reference" "BTSELCH2"
+		(property "Reference" "SEL_CH2"
 			(at 143.51 132.08 0)
 			(effects
 				(font
@@ -6047,7 +6047,7 @@
 		(instances
 			(project "pocketPSU_elec_main"
 				(path "/439011d5-4dd5-4d65-a9bd-b0be402d54a5/cbe29d96-4bd9-4dd2-be02-96003f32f1da"
-					(reference "BTSELCH2")
+					(reference "SEL_CH2")
 					(unit 1)
 				)
 			)
@@ -6142,7 +6142,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5b38d06a-4fe4-470c-ae02-a5f9df549756")
-		(property "Reference" "BTSELCH1"
+		(property "Reference" "SEL_CH1"
 			(at 67.31 132.08 0)
 			(effects
 				(font
@@ -6209,7 +6209,7 @@
 		(instances
 			(project "pocketPSU_elec_main"
 				(path "/439011d5-4dd5-4d65-a9bd-b0be402d54a5/cbe29d96-4bd9-4dd2-be02-96003f32f1da"
-					(reference "BTSELCH1")
+					(reference "SEL_CH1")
 					(unit 1)
 				)
 			)
@@ -6296,7 +6296,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 186.69 45.72 0)
+		(at 208.28 45.72 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6305,7 +6305,7 @@
 		(fields_autoplaced yes)
 		(uuid "5bfc6e35-ef09-4301-93e5-3f011c5bb173")
 		(property "Reference" "#PWR06"
-			(at 186.69 52.07 0)
+			(at 208.28 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6314,7 +6314,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 186.69 50.8 0)
+			(at 208.28 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6322,7 +6322,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 186.69 45.72 0)
+			(at 208.28 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6331,7 +6331,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 186.69 45.72 0)
+			(at 208.28 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6340,7 +6340,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 186.69 45.72 0)
+			(at 208.28 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7047,7 +7047,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 186.69 33.02 0)
+		(at 208.28 33.02 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7056,7 +7056,7 @@
 		(fields_autoplaced yes)
 		(uuid "80b61e5f-a46d-4bc6-a824-dba2092fbd35")
 		(property "Reference" "#PWR07"
-			(at 186.69 36.83 0)
+			(at 208.28 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7065,7 +7065,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 186.69 27.94 0)
+			(at 208.28 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7073,7 +7073,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 186.69 33.02 0)
+			(at 208.28 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7082,7 +7082,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 186.69 33.02 0)
+			(at 208.28 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7091,7 +7091,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 186.69 33.02 0)
+			(at 208.28 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7780,7 +7780,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "aacb5b7a-8362-4de7-b1d7-d38200652c70")
-		(property "Reference" "BTONCH2"
+		(property "Reference" "ON_CH2"
 			(at 105.41 132.08 0)
 			(effects
 				(font
@@ -7847,7 +7847,7 @@
 		(instances
 			(project "pocketPSU_elec_main"
 				(path "/439011d5-4dd5-4d65-a9bd-b0be402d54a5/cbe29d96-4bd9-4dd2-be02-96003f32f1da"
-					(reference "BTONCH2")
+					(reference "ON_CH2")
 					(unit 1)
 				)
 			)
@@ -9041,7 +9041,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d8d298e8-0fff-4154-a86a-1107b1617b08")
-		(property "Reference" "BTONCH1"
+		(property "Reference" "ON_CH1"
 			(at 27.94 132.08 0)
 			(effects
 				(font
@@ -9108,7 +9108,7 @@
 		(instances
 			(project "pocketPSU_elec_main"
 				(path "/439011d5-4dd5-4d65-a9bd-b0be402d54a5/cbe29d96-4bd9-4dd2-be02-96003f32f1da"
-					(reference "BTONCH1")
+					(reference "ON_CH1")
 					(unit 1)
 				)
 			)
@@ -9190,7 +9190,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "db752fd4-d62b-4abf-b3ec-38b1b9409f13")
-		(property "Reference" "U1"
+		(property "Reference" "Q1"
 			(at 153.67 42.5449 0)
 			(effects
 				(font
@@ -9256,7 +9256,7 @@
 		(instances
 			(project "pocketPSU_elec_main"
 				(path "/439011d5-4dd5-4d65-a9bd-b0be402d54a5/cbe29d96-4bd9-4dd2-be02-96003f32f1da"
-					(reference "U1")
+					(reference "Q1")
 					(unit 1)
 				)
 			)
