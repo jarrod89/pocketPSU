@@ -19,7 +19,7 @@
 	(pad 1 smd rect (at 1.13 0.95 0.00) (size 1.07 0.53) (layers F.Cu F.Paste F.Mask))
 	(fp_circle (center 1.40 1.46) (end 1.43 1.46) (layer F.Fab) (width 0.06))
 	(fp_circle (center 1.65 0.95) (end 1.75 0.95) (layer Cmts.User) (width 0.20))
-	(model "footprints/footprints.3dshapes/SOT-23-3_L3.0-W1.6-P1.90-LS2.8-BR.wrl"
+	(model "../footprints/footprints.3dshapes/SOT-23-3_L3.0-W1.6-P1.90-LS2.8-BR.wrl"
 		(offset (xyz 0.000 -0.000 -0.000))
 		(scale (xyz 1 1 1))
 		(rotate (xyz 0 0 0))

@@ -1,0 +1,52 @@
+name: "KiBot GitHub action setup for pocketPSU"
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the master branch
+on:
+  push:
+    paths:
+      - '**/*.kicad_sch'
+      - '**/*.kicad_pcb'
+      - '**/*.kibot.yaml'
+      - '.github/workflows/kibot_action_quick_start.yml'
+  pull_request:
+    paths:
+      - '**/*.kicad_sch'
+      - '**/*.kicad_pcb'
+      - '**/*.kibot.yaml'
+      - '.github/workflows/kibot_action_quick_start.yml'
+  repository_dispatch:
+    types: [run_qs_gha]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  kibot:
+    name: "KiBot"
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Get repo
+      uses: actions/checkout@v4
+      with:
+        # So we can run a diff between last 2 changes
+        fetch-depth: '0'
+
+    - name: Run KiBot
+      uses: INTI-CMNB/KiBot@v2_k8
+      with:
+        # Required - kibot config file
+        config: elec/pocketPSU_elec_main/pocketPSU.kibot.yaml
+        schema: elec/pocketPSU_elec_main/pocketPSU_elec_main.kicad_sch
+        board: elec/pocketPSU_elec_main/pocketPSU_elec_main.kicad_pcb
+        dir: Generated
+
+    # - name: Run KiBot
+    #   uses: INTI-CMNB/KiBot@v2_k8
+    #   with:
+    #     quickstart: YES
+
+    - name: Upload results
+      uses: actions/upload-artifact@v4
+      with:
+        name: Automatic_outputs
+        path: Generated
