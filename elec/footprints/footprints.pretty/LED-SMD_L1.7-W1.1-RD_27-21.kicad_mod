@@ -1,26 +1,170 @@
-(module easyeda2kicad:LED-SMD_L1.7-W1.1-RD_27-21 (layer F.Cu) (tedit 5DC5F6A4)
+(footprint "LED-SMD_L1.7-W1.1-RD_27-21"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -4 0)
+		(layer "F.SilkS")
+		(uuid "422ff6a5-c6b3-457c-9d1a-37921c26a3b9")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "LED-SMD_L1.7-W1.1-RD_27-21"
+		(at 0 4 0)
+		(layer "F.Fab")
+		(uuid "804417d0-84d9-45e8-a03e-9286cd6ce287")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ed139114-de42-498d-a69e-cd793b858915")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c7ccc567-ab0b-4f57-867f-13d69410a82e")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b4cf1bc8-3c12-4adf-8139-aef35ce84286")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
 	(attr through_hole)
-	(fp_text reference REF** (at 0 -4.0) (layer F.SilkS)
-		(effects (font (size 1 1) (thickness 0.15)))
+	(fp_line
+		(start -0.59 -0.81)
+		(end 0.6 -0.81)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "4ee6653e-fc6e-40d8-ae87-1597285bd9db")
 	)
-	(fp_text value LED-SMD_L1.7-W1.1-RD_27-21 (at 0 4.0) (layer F.Fab)
-		(effects (font (size 1 1) (thickness 0.15)))
+	(fp_line
+		(start -0.59 -0.57)
+		(end -0.59 -0.81)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "db6d2029-21df-4cdb-963a-f0f4e0fd206d")
 	)
-	(fp_text user %R (at 0 0) (layer F.Fab)
-		(effects (font (size 1 1) (thickness 0.15)))
+	(fp_line
+		(start -0.35 -0.3)
+		(end 0.3 -0.3)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e303ca54-7357-41f8-bbf3-86641a7c61b4")
 	)
-	(fp_line (start -0.35 -0.30) (end 0.30 -0.30) (layer F.SilkS) (width 0.25))
-	(fp_line (start 0.25 0.30) (end -0.33 0.30) (layer F.SilkS) (width 0.25))
-	(fp_line (start -0.27 0.30) (end -0.27 -0.30) (layer F.SilkS) (width 0.25))
-	(fp_line (start -0.59 -0.57) (end -0.59 -0.81) (layer F.SilkS) (width 0.25))
-	(fp_line (start -0.59 -0.81) (end 0.60 -0.81) (layer F.SilkS) (width 0.25))
-	(fp_line (start 0.60 -0.81) (end 0.60 -0.54) (layer F.SilkS) (width 0.25))
-	(pad 2 smd rect (at 0.75 0.00 0.00) (size 0.60 0.80) (layers F.Cu F.Paste F.Mask))
-	(pad 1 smd rect (at -0.75 0.00 0.00) (size 0.60 0.80) (layers F.Cu F.Paste F.Mask))
-	(fp_circle (center -0.86 0.35) (end -0.83 0.35) (layer F.Fab) (width 0.06))
-	(model "footprints/footprints.3dshapes/LED-SMD_2P-L1.7-W1.1-H0.6.wrl"
-		(offset (xyz 0.000 0.210 0.000))
-		(scale (xyz 1 1 1))
-		(rotate (xyz 0 0 0))
+	(fp_line
+		(start -0.27 0.3)
+		(end -0.27 -0.3)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "9d0f4056-61bc-4c79-bc24-48a9104bbc02")
+	)
+	(fp_line
+		(start 0.25 0.3)
+		(end -0.33 0.3)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "4cb1b864-9ad6-42af-babd-2fb4ea046606")
+	)
+	(fp_line
+		(start 0.6 -0.81)
+		(end 0.6 -0.54)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "1ea5c9a7-93b6-4c58-af4c-5e7b6929ccb1")
+	)
+	(fp_circle
+		(center -0.86 0.35)
+		(end -0.83 0.35)
+		(stroke
+			(width 0.06)
+			(type solid)
+		)
+		(fill none)
+		(layer "F.Fab")
+		(uuid "9add267f-b40a-4aeb-853c-ab352c2bf4f6")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "0dd06250-5f1a-4a05-85b1-54768ae219c7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -0.75 0)
+		(size 0.6 0.8)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "67c6687a-f5b3-441a-962b-d6d9444958b4")
+	)
+	(pad "2" smd rect
+		(at 0.75 0)
+		(size 0.6 0.8)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "afb9e709-1274-4a88-af48-15815f4f44cf")
+	)
+	(model "../footprints/footprints.3dshapes/LED-SMD_2P-L1.7-W1.1-H0.6.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
 	)
 )

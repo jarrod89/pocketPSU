@@ -1,0 +1,172 @@
+# Example KiBot config file
+# Test
+kibot:
+  version: 1
+
+preflight:
+  run_erc: true
+  run_drc: true
+  check_zone_fills: true
+  ignore_unconnected: true
+  set_text_variables:
+    # The revision will be the short git hash
+    # We use ${git_hash} for the REV field in the worksheet (frame)
+    - name: 'git_hash'
+      command: 'git log -1 --format="%h"'
+      before: 'Git: '
+    - name: 'git_tag'
+      command: 'git log -1 --format="%(describe:tags)"'
+      before: 'tag: '
+    # Coherent date and time for the schematic and PCB
+    # This will be the time stamp of the files generation, not the commit times
+    # We use `${date}` for the time field in the worksheet (frame)
+    - name: 'date'
+      command: 'date --iso-8601=minutes'
+
+global:
+  # We want the revision added to the names for this project
+  output: '%f-%i_%r.%x'
+
+import:
+  - JLCPCB.kibot.yaml
+
+# filters:
+#  - name: 'exclude_any'
+#    type: 'generic'
+#    comment: 'Exclude logos, testpoints, fiducials and power'
+#    exclude_any:
+#      - column: Reference
+#        regex: '^(G|#|TP|F).*'
+
+  - name: 'print_top_bot'
+    comment: "Print Top and Bottom layers"
+    type: pcb_print
+    dir: PCB
+    options:
+      format: 'PDF'
+      pages:
+        - scaling: 2.0
+          sheet: Front
+          layers:
+            - layer: Edge.Cuts
+            - layer: F.Cu
+            - layer: F.Mask
+              color: '#14332440'
+            - layer: F.Paste
+            - layer: F.SilkS
+            - layer: F.Fab
+              plot_footprint_refs: false
+              plot_footprint_values: false
+            - layer: Dwgs.User
+        - mirror: true
+          scaling: 2.0
+          layers:
+            - layer: B.Fab
+              color: "#000080"
+            - layer: Edge.Cuts
+              color: "#FF8000"
+            - layer: B.SilkS
+              color: "#626262"
+            - layer: B.Paste
+              color: "#FF8A8A"
+            - layer: B.Cu
+              color: "#B3FFB3"
+            - layer: B.Mask
+              color: '#14332480'
+            - layer: Dwgs.User
+
+  - name: 'interactive_bom'
+    comment: "Interactive Bill of Materials (HTML)"
+    type: ibom
+    dir: BoM
+    options:
+      extra_fields: 'LCSC Part'
+      blacklist: 'DNF*'
+
+  # - name: 'bom_html'
+  #   comment: "Bill of Materials in HTML format"
+  #   type: bom
+  #   dir: BoM
+  #   options: &bom_options
+  #     columns:
+  #       - Row
+  #       - field: References
+  #         name: Referencias
+  #       - field: Part
+  #         name: Parte
+  #       - field: Value
+  #         name: Valor
+  #       - field: manf#
+  #         name: P/N
+  #       - field: manf
+  #         name: Fabricante
+  #       - field: digikey#
+  #         name: 'Cod. Digi-Key'
+  #       - Footprint
+  #       - field: Desc
+  #         name: Descripción
+  #       - 'Quantity Per PCB'
+  #     group_fields:  ['digikey#', 'Part']
+  #     normalize_values: true
+  #     normalize_locale: true
+  #     exclude_filter: 'exclude_any'
+  #     html:
+  #       logo: 'images/inti.png'
+  #       digikey_link: 'digikey#'
+  #       highlight_empty: false
+
+  # - name: 'bom_xlsx'
+  #   comment: "Bill of Materials in XLSX format"
+  #   type: bom
+  #   dir: BoM
+  #   options:
+  #     <<: *bom_options
+  #     format: XLSX
+  #     xlsx:
+  #       logo: 'images/inti.png'
+  #       digikey_link: 'digikey#'
+  #       highlight_empty: false
+
+  # - name: 'bom_csv'
+  #   comment: "Bill of Materials in CSV format"
+  #   type: bom
+  #   dir: BoM
+  #   options:
+  #     <<: *bom_options
+  #     format: CSV
+
+  - name: pcb_top_g
+    comment: "PCB render top green"
+    type: pcbdraw
+    dir: PCB
+    options:
+      format: jpg
+      show_components: all
+      dpi: 600
+
+  - name: pcb_bot_g
+    comment: "PCB render bottom green"
+    type: pcbdraw
+    dir: PCB
+    options:
+      format: jpg
+      bottom: True
+      show_components: all
+      dpi: 600
+
+  - name: step
+    comment: "Generate 3D model (STEP)"
+    type: step
+    dir: 3D
+    options:
+      metric_units: true
+      origin: 85,66.2
+
+  - name: "base"
+    dir: 3D
+    type: render_3d
+    run_by_default: false
+    options:
+      ray_tracing: true
+      width: 2000
+      height: 1000

@@ -41,7 +41,7 @@
 	(fp_circle (center 2.54 -7.25) (end 2.82 -7.25) (layer F.Fab) (width 0.55))
 	(fp_circle (center 6.65 -8.15) (end 6.68 -8.15) (layer F.Fab) (width 0.06))
 	(fp_arc (start -0.00 -0.27) (end -1.78 -1.27) (angle -238.49) (layer F.SilkS) (width 0.25))
-	(model "footprints/footprints.3dshapes/SW-TH_EC11XXXXXXXX-L11.7-W12.0-H24.5-P2.5-LS14.5.wrl"
+	(model "../footprints/footprints.3dshapes/SW-TH_EC11XXXXXXXX-L11.7-W12.0-H24.5-P2.5-LS14.5.wrl"
 		(offset (xyz 0.000 -0.000 0.000))
 		(scale (xyz 1 1 1))
 		(rotate (xyz 0 0 0))
