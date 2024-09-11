@@ -98,7 +98,7 @@ outputs:
   - name: "base"
     dir: 3D
     type: render_3d
-    run_by_default: false
+    # run_by_default: false
     options:
       ray_tracing: true
       width: 2000
