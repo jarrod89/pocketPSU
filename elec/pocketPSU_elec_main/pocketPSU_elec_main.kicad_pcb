@@ -23838,6 +23838,19 @@
 			(justify left bottom)
 		)
 	)
+	(gr_text "pocketPSU ${git_hash}"
+		(at 101 112.4 90)
+		(layer "F.SilkS")
+		(uuid "8c783133-f0b4-4ccd-9317-9557f3df2d28")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
 	(gr_text "3V3"
 		(at 179.5 52.9 0)
 		(layer "F.SilkS")
