@@ -47,7 +47,7 @@ outputs:
   - name: 'print_front'
     comment: "Print F.Cu+Dwgs.User"
     type: pdf_pcb_print
-    dir: .
+    dir: PCB
     layers:
       - layer: F.Cu
       - layer: Dwgs.User
@@ -55,44 +55,10 @@ outputs:
   - name: 'print_bottom'
     comment: "Print B.Cu+Dwgs.User"
     type: pdf_pcb_print
-    dir: .
+    dir: PCB
     layers:
       - layer: B.Cu
       - layer: Dwgs.User
-
-  # - name: 'print_gnd'
-  #   comment: "Print GND+Dwgs.User"
-  #   type: pdf_pcb_print
-  #   dir: .
-  #   layers:
-  #     - layer: GND
-  #     - layer: Dwgs.User
-
-  # - name: 'print_power'
-  #   comment: "Print Power_+3,3V+Dwgs.User"
-  #   type: pdf_pcb_print
-  #   dir: .
-  #   layers:
-  #     - layer: Power_+3,3V
-  #     - layer: Dwgs.User
-
-  # - name: 'print_s1'
-  #   comment: "Print Señal_1+Dwgs.User"
-  #   type: pdf_pcb_print
-  #   dir: .
-  #   layers:
-  #     - layer: Señal_1
-  #       suffix: S1_Cu
-  #     - layer: Dwgs.User
-
-  # - name: 'print_s2'
-  #   comment: "Print Señal_2+Dwgs.User"
-  #   type: pdf_pcb_print
-  #   dir: .
-  #   layers:
-  #     - layer: Señal_2
-  #       suffix: S2_Cu
-  #     - layer: Dwgs.User
 
   - name: 'interactive_bom'
     comment: "Interactive Bill of Materials (HTML)"
@@ -102,62 +68,10 @@ outputs:
       extra_fields: 'LCSC Part'
       blacklist: 'DNF*'
 
-  # - name: 'bom_html'
-  #   comment: "Bill of Materials in HTML format"
-  #   type: bom
-  #   dir: BoM
-  #   options: &bom_options
-  #     columns:
-  #       - Row
-  #       - field: References
-  #         name: Referencias
-  #       - field: Part
-  #         name: Parte
-  #       - field: Value
-  #         name: Valor
-  #       - field: manf#
-  #         name: P/N
-  #       - field: manf
-  #         name: Fabricante
-  #       - field: digikey#
-  #         name: 'Cod. Digi-Key'
-  #       - Footprint
-  #       - field: Desc
-  #         name: Descripción
-  #       - 'Quantity Per PCB'
-  #     group_fields:  ['digikey#', 'Part']
-  #     normalize_values: true
-  #     normalize_locale: true
-  #     exclude_filter: 'exclude_any'
-  #     html:
-  #       logo: 'images/inti.png'
-  #       digikey_link: 'digikey#'
-  #       highlight_empty: false
-
-  # - name: 'bom_xlsx'
-  #   comment: "Bill of Materials in XLSX format"
-  #   type: bom
-  #   dir: BoM
-  #   options:
-  #     <<: *bom_options
-  #     format: XLSX
-  #     xlsx:
-  #       logo: 'images/inti.png'
-  #       digikey_link: 'digikey#'
-  #       highlight_empty: false
-
-  # - name: 'bom_csv'
-  #   comment: "Bill of Materials in CSV format"
-  #   type: bom
-  #   dir: BoM
-  #   options:
-  #     <<: *bom_options
-  #     format: CSV
-
   - name: pcb_top_g
     comment: "PCB render top green"
     type: pcbdraw
-    dir: PCB/green
+    dir: PCB
     options:
       format: jpg
       show_components: all
@@ -166,7 +80,7 @@ outputs:
   - name: pcb_bot_g
     comment: "PCB render bottom green"
     type: pcbdraw
-    dir: PCB/green
+    dir: PCB
     options:
       format: jpg
       bottom: True
