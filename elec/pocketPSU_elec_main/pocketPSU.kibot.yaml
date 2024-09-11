@@ -12,7 +12,10 @@ preflight:
     # The revision will be the short git hash
     # We use ${git_hash} for the REV field in the worksheet (frame)
     - name: 'git_hash'
-      command: 'git log -1 --format="%h_%(describe:tags)"'
+      command: 'git log -1 --format="%h"'
+      before: 'Git:'
+    - name: 'git_tag'
+      command: 'git log -1 --format="%(describe:tags)"'
       before: 'Git:'
     # Coherent date and time for the schematic and PCB
     # This will be the time stamp of the files generation, not the commit times

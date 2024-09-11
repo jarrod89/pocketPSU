@@ -23838,7 +23838,7 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "pocketPSU ${git_hash}"
+	(gr_text "pocketPSU ${git_tag}"
 		(at 101 112.4 90)
 		(layer "F.SilkS")
 		(uuid "8c783133-f0b4-4ccd-9317-9557f3df2d28")
