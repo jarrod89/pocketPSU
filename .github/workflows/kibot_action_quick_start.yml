@@ -4,11 +4,9 @@ name: "KiBot GitHub action setup for pocketPSU"
 # events but only for the master branch
 on:
   push:
-    paths:
-      - '**/*.kicad_sch'
-      - '**/*.kicad_pcb'
-      - '**/*.kibot.yaml'
-      - '.github/workflows/kibot_action_quick_start.yml'
+    # Pattern matched against refs/tags
+    tags:        
+      - '*'           # Push events to every tag not containing /
   pull_request:
     paths:
       - '**/*.kicad_sch'

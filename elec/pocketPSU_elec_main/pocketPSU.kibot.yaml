@@ -8,6 +8,17 @@ preflight:
   run_drc: true
   check_zone_fills: true
   ignore_unconnected: true
+  set_text_variables:
+    # The revision will be the short git hash
+    # We use ${git_hash} for the REV field in the worksheet (frame)
+    - name: 'git_hash'
+      command: 'git log -1 --format="%h_%(describe:tags)"'
+      before: 'Git:'
+    # Coherent date and time for the schematic and PCB
+    # This will be the time stamp of the files generation, not the commit times
+    # We use `${date}` for the time field in the worksheet (frame)
+    - name: 'date'
+      command: 'date --iso-8601=minutes'
 
 global:
   # We want the revision added to the names for this project
