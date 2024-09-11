@@ -38,42 +38,42 @@ import:
 #      - column: Reference
 #        regex: '^(G|#|TP|F).*'
 
-  - name: 'print_top_bot'
-    comment: "Print Top and Bottom layers"
-    type: pcb_print
-    dir: PCB
-    options:
-      format: 'PDF'
-      pages:
-        - scaling: 2.0
-          sheet: Front
-          layers:
-            - layer: Edge.Cuts
-            - layer: F.Cu
-            - layer: F.Mask
-              color: '#14332440'
-            - layer: F.Paste
-            - layer: F.SilkS
-            - layer: F.Fab
-              plot_footprint_refs: false
-              plot_footprint_values: false
-            - layer: Dwgs.User
-        - mirror: true
-          scaling: 2.0
-          layers:
-            - layer: B.Fab
-              color: "#000080"
-            - layer: Edge.Cuts
-              color: "#FF8000"
-            - layer: B.SilkS
-              color: "#626262"
-            - layer: B.Paste
-              color: "#FF8A8A"
-            - layer: B.Cu
-              color: "#B3FFB3"
-            - layer: B.Mask
-              color: '#14332480'
-            - layer: Dwgs.User
+  # - name: 'print_top_bot'
+  #   comment: "Print Top and Bottom layers"
+  #   type: pcb_print
+  #   dir: PCB
+  #   options:
+  #     format: 'PDF'
+  #     pages:
+  #       - scaling: 2.0
+  #         sheet: Front
+  #         layers:
+  #           - layer: Edge.Cuts
+  #           - layer: F.Cu
+  #           - layer: F.Mask
+  #             color: '#14332440'
+  #           - layer: F.Paste
+  #           - layer: F.SilkS
+  #           - layer: F.Fab
+  #             plot_footprint_refs: false
+  #             plot_footprint_values: false
+  #           - layer: Dwgs.User
+  #       - mirror: true
+  #         scaling: 2.0
+  #         layers:
+  #           - layer: B.Fab
+  #             color: "#000080"
+  #           - layer: Edge.Cuts
+  #             color: "#FF8000"
+  #           - layer: B.SilkS
+  #             color: "#626262"
+  #           - layer: B.Paste
+  #             color: "#FF8A8A"
+  #           - layer: B.Cu
+  #             color: "#B3FFB3"
+  #           - layer: B.Mask
+  #             color: '#14332480'
+  #           - layer: Dwgs.User
 
   - name: 'interactive_bom'
     comment: "Interactive Bill of Materials (HTML)"
@@ -162,11 +162,11 @@ import:
       metric_units: true
       origin: 85,66.2
 
-  - name: "base"
-    dir: 3D
-    type: render_3d
-    run_by_default: false
-    options:
-      ray_tracing: true
-      width: 2000
-      height: 1000
+  # - name: "base"
+  #   dir: 3D
+  #   type: render_3d
+  #   run_by_default: false
+  #   options:
+  #     ray_tracing: true
+  #     width: 2000
+  #     height: 1000
