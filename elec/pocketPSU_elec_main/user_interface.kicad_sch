@@ -1251,28 +1251,28 @@
 				)
 			)
 		)
-		(symbol "footprints:EC11E09244BS"
+		(symbol "footprints:EC11J1525402"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "SW"
-				(at 0 12.7 0)
+				(at 0 14.73 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "EC11E09244BS"
-				(at 0 -12.7 0)
+			(property "Value" "EC11J1525402"
+				(at 0 -14.48 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" "footprints:SW-TH_EC11XXXXXXXX"
-				(at 0 -15.24 0)
+			(property "Footprint" "footprints:SW-SMD_EC11J1525402"
+				(at 0 -17.02 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1280,8 +1280,8 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://lcsc.com/product-detail/Coded-Rotary-Switches_ALPS-Electric-EC11E09244BS_C470742.html"
-				(at 0 -17.78 0)
+			(property "Datasheet" "https://lcsc.com/product-detail/Coded-Rotary-Switches_ALPS_EC11J1525402_EC11J1525402_C209762.html"
+				(at 0 -19.56 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1298,8 +1298,8 @@
 					(hide yes)
 				)
 			)
-			(property "LCSC Part" "C470742"
-				(at 0 -20.32 0)
+			(property "LCSC Part" "C209762"
+				(at 0 -22.1 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1307,7 +1307,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "EC11E09244BS_0_1"
+			(symbol "EC11J1525402_0_1"
 				(polyline
 					(pts
 						(xy -2.54 3.81) (xy -2.54 5.08)
@@ -1394,8 +1394,44 @@
 					)
 				)
 				(pin unspecified line
-					(at 7.62 0 180)
-					(length 3.302)
+					(at -8.89 0 0)
+					(length 5.08)
+					(name "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 0 180)
+					(length 5.08)
+					(name "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 2.54 0)
+					(length 5.08)
 					(name "6"
 						(effects
 							(font
@@ -1412,8 +1448,8 @@
 					)
 				)
 				(pin unspecified line
-					(at -7.62 0 0)
-					(length 3.302)
+					(at -8.89 -2.54 0)
+					(length 5.08)
 					(name "7"
 						(effects
 							(font
@@ -1422,6 +1458,42 @@
 						)
 					)
 					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -2.54 180)
+					(length 5.08)
+					(name "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 2.54 180)
+					(length 5.08)
+					(name "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1512,6 +1584,197 @@
 						)
 					)
 					(number "E"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "footprints:F.0603.00026_P2-0603B1TS2-06T-001"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "F.0603.00026/P2-0603B1TS2-06T-001"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "footprints:LED0603-RD"
+				(at 0 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC Part" "C7496819"
+				(at 0 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "F.0603.00026_P2-0603B1TS2-06T-001_0_1"
+				(polyline
+					(pts
+						(xy -1.27 0) (xy -2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 1.78) (xy -1.27 -1.78)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.29 1.52) (xy -3.3 2.54) (xy -2.29 1.52)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 2.54) (xy -2.29 3.56) (xy -1.27 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -4.06 3.3) (xy -3.05 2.79) (xy -3.56 2.29) (xy -4.06 3.3)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.05 4.32) (xy -2.03 3.81) (xy -2.54 3.3) (xy -3.05 4.32)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.78) (xy -1.27 0) (xy 1.27 -1.78) (xy 1.27 1.78)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1725,197 +1988,6 @@
 						)
 					)
 					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "footprints:XL-1606SYGC"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "LED"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "XL-1606SYGC"
-				(at 0 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "footprints:LED-SMD_L1.7-W1.1-RD_27-21"
-				(at 0 -7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "LCSC Part" "C965864"
-				(at 0 -10.16 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "XL-1606SYGC_0_1"
-				(polyline
-					(pts
-						(xy -1.27 0) (xy -2.54 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 1.78) (xy -1.27 -1.78)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 0) (xy 1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.29 1.52) (xy -3.3 2.54) (xy -2.29 1.52)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 2.54) (xy -2.29 3.56) (xy -1.27 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(polyline
-					(pts
-						(xy -4.06 3.3) (xy -3.05 2.79) (xy -3.56 2.29) (xy -4.06 3.3)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.05 4.32) (xy -2.03 3.81) (xy -2.54 3.3) (xy -3.05 4.32)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 1.78) (xy -1.27 0) (xy 1.27 -1.78) (xy 1.27 1.78)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin unspecified line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "K"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2161,6 +2233,12 @@
 		(uuid "11a59f64-9470-48d7-b111-1bdfc7721aa1")
 	)
 	(junction
+		(at 60.96 49.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "12ab8358-c77e-45d0-a2e4-3c7365a3d04d")
+	)
+	(junction
 		(at 67.31 129.54)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2291,6 +2369,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d663be7d-910d-47e4-844f-b6ce8a268791")
+	)
+	(junction
+		(at 78.74 49.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "da10329b-1704-455c-8d10-b3eb72f60b1e")
 	)
 	(junction
 		(at 111.76 151.13)
@@ -2506,6 +2590,16 @@
 	)
 	(wire
 		(pts
+			(xy 78.74 49.53) (xy 80.01 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08a19428-2f66-4f08-8d3a-ac38622b48f5")
+	)
+	(wire
+		(pts
 			(xy 166.37 91.44) (xy 220.98 91.44)
 		)
 		(stroke
@@ -2573,6 +2667,16 @@
 			(type default)
 		)
 		(uuid "13eb1c94-c580-494b-bc99-bb5249d9b693")
+	)
+	(wire
+		(pts
+			(xy 60.96 49.53) (xy 60.96 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "140ec199-6dc3-4689-8085-f6fd009efcfb")
 	)
 	(wire
 		(pts
@@ -2696,16 +2800,6 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 49.53) (xy 59.69 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "227d456c-eab1-4aab-b98b-621675fc2c4f")
-	)
-	(wire
-		(pts
 			(xy 120.65 129.54) (xy 124.46 129.54)
 		)
 		(stroke
@@ -2763,6 +2857,16 @@
 			(type default)
 		)
 		(uuid "27da9907-1c5f-40d0-a713-92d7871d6327")
+	)
+	(wire
+		(pts
+			(xy 78.74 46.99) (xy 78.74 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28cf32ed-e25d-4933-bc52-9098af30fc84")
 	)
 	(bus
 		(pts
@@ -2823,16 +2927,6 @@
 			(type default)
 		)
 		(uuid "2ce2913c-0caf-4a52-8fc9-8841f3ef3d80")
-	)
-	(wire
-		(pts
-			(xy 77.47 49.53) (xy 80.01 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2d094e49-f38d-4f6c-8d94-a111ece8b396")
 	)
 	(wire
 		(pts
@@ -3013,6 +3107,16 @@
 			(type default)
 		)
 		(uuid "42363f23-065c-4a56-9f96-3d13b1a46e22")
+	)
+	(wire
+		(pts
+			(xy 78.74 49.53) (xy 78.74 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46afbf16-992b-4de9-bfbc-06d9fa5fbb87")
 	)
 	(wire
 		(pts
@@ -3326,6 +3430,16 @@
 	)
 	(wire
 		(pts
+			(xy 60.96 46.99) (xy 60.96 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "715e9a9c-e5c3-4a76-8de4-29aa0f37a0a6")
+	)
+	(wire
+		(pts
 			(xy 181.61 129.54) (xy 181.61 125.73)
 		)
 		(stroke
@@ -3463,6 +3577,16 @@
 			(type default)
 		)
 		(uuid "8304d0e0-2b34-421c-aac6-b528a540ae6c")
+	)
+	(wire
+		(pts
+			(xy 59.69 49.53) (xy 60.96 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "84250a4d-318c-4924-a3ed-1c3124faa790")
 	)
 	(wire
 		(pts
@@ -5657,6 +5781,110 @@
 		)
 	)
 	(symbol
+		(lib_id "footprints:EC11J1525402")
+		(at 69.85 49.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3570ccdf-e58f-4408-a9cc-e9694e13ca04")
+		(property "Reference" "SW2"
+			(at 82.55 43.2114 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "EC11J1525402"
+			(at 82.55 45.7514 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "footprints:SW-SMD_EC11J1525402"
+			(at 69.85 66.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/Coded-Rotary-Switches_ALPS_EC11J1525402_EC11J1525402_C209762.html"
+			(at 69.85 69.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 69.85 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C209762"
+			(at 69.85 71.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "D"
+			(uuid "9b8842b8-38c8-4971-85ae-6d12e431bbe6")
+		)
+		(pin "10"
+			(uuid "689e3e93-e968-4d3c-a752-e9b707580741")
+		)
+		(pin "C"
+			(uuid "563d86cc-87a0-43ec-b556-3d8db368b299")
+		)
+		(pin "7"
+			(uuid "5c1af53e-6ccc-4d04-97e4-d05e50c5d521")
+		)
+		(pin "6"
+			(uuid "28868227-51b1-4a82-a1af-b3d4af7f0f24")
+		)
+		(pin "E"
+			(uuid "5411fa82-8b2d-4871-9ace-9d6989222743")
+		)
+		(pin "A"
+			(uuid "522f62e9-4add-41ac-83e6-8181902b3a73")
+		)
+		(pin "11"
+			(uuid "3e13ee87-49ec-481a-868c-46476e336e5e")
+		)
+		(pin "8"
+			(uuid "4c98f938-c793-42c8-80ad-d2f8b4eba404")
+		)
+		(pin "9"
+			(uuid "118707c3-7ed8-4c51-830d-4879b548c763")
+		)
+		(pin "B"
+			(uuid "e9667088-e4b8-416a-b140-58eafa69449b")
+		)
+		(instances
+			(project ""
+				(path "/439011d5-4dd5-4d65-a9bd-b0be402d54a5/cbe29d96-4bd9-4dd2-be02-96003f32f1da"
+					(reference "SW2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3.3V")
 		(at 105.41 118.11 0)
 		(unit 1)
@@ -5717,98 +5945,6 @@
 			(project "pocketPSU_elec_main"
 				(path "/439011d5-4dd5-4d65-a9bd-b0be402d54a5/cbe29d96-4bd9-4dd2-be02-96003f32f1da"
 					(reference "#PWR021")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "footprints:EC11E09244BS")
-		(at 69.85 49.53 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3d08120b-e3b4-40d8-9068-d59231def011")
-		(property "Reference" "SW1"
-			(at 82.55 43.2114 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "EC11E09244BS"
-			(at 82.55 45.7514 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "footprints:SW-TH_EC11XXXXXXXX"
-			(at 69.85 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Coded-Rotary-Switches_ALPS-Electric-EC11E09244BS_C470742.html"
-			(at 69.85 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 69.85 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C470742"
-			(at 69.85 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "C"
-			(uuid "76772310-8771-47ee-9d06-b3f2a7e89373")
-		)
-		(pin "D"
-			(uuid "cd20fd6c-ca59-4c7d-aab7-9cee45db54e5")
-		)
-		(pin "E"
-			(uuid "c67c2271-1b18-411b-a7d2-6f3aa23c1f00")
-		)
-		(pin "7"
-			(uuid "e73b29ef-af57-40bd-95db-bf9ed79eaab1")
-		)
-		(pin "B"
-			(uuid "66d54258-4766-433b-873b-f3473ac8ebc4")
-		)
-		(pin "A"
-			(uuid "6c1ea9b7-8bdd-4267-9d67-46b429afcb83")
-		)
-		(pin "6"
-			(uuid "0c870930-fd0f-434d-b2a3-7532f4d853aa")
-		)
-		(instances
-			(project "pocketPSU_elec_main"
-				(path "/439011d5-4dd5-4d65-a9bd-b0be402d54a5/cbe29d96-4bd9-4dd2-be02-96003f32f1da"
-					(reference "SW1")
 					(unit 1)
 				)
 			)
@@ -6703,6 +6839,86 @@
 		)
 	)
 	(symbol
+		(lib_id "footprints:F.0603.00026_P2-0603B1TS2-06T-001")
+		(at 226.06 130.81 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "744e7622-5b95-49e4-a8ef-6c757bf170ec")
+		(property "Reference" "LED4"
+			(at 228.6 130.2999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "F.0603.00026/P2-0603B1TS2-06T-001"
+			(at 228.6 132.8399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "footprints:LED0603-RD"
+			(at 233.68 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 226.06 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 226.06 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C2290"
+			(at 236.22 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "161e9102-f732-4107-9842-d258d6b58811")
+		)
+		(pin "1"
+			(uuid "2c5ca1fd-5e12-4698-9ae4-040a6fa31434")
+		)
+		(instances
+			(project "pocketPSU_elec_main"
+				(path "/439011d5-4dd5-4d65-a9bd-b0be402d54a5/cbe29d96-4bd9-4dd2-be02-96003f32f1da"
+					(reference "LED4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 226.06 149.86 0)
 		(unit 1)
@@ -7383,85 +7599,6 @@
 			(project "pocketPSU_elec_main"
 				(path "/439011d5-4dd5-4d65-a9bd-b0be402d54a5/cbe29d96-4bd9-4dd2-be02-96003f32f1da"
 					(reference "C4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "footprints:XL-1606SYGC")
-		(at 252.73 130.81 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "969a007d-3d32-42a1-9cde-35a3868bc291")
-		(property "Reference" "LED3"
-			(at 255.27 130.2999 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "XL-1606SYGC"
-			(at 255.27 132.8399 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "footprints:LED-SMD_L1.7-W1.1-RD_27-21"
-			(at 260.35 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 252.73 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 252.73 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C2290"
-			(at 262.89 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "09c9cadf-a3f7-47fc-9251-cb5ba773dc1b")
-		)
-		(pin "1"
-			(uuid "b7d00f5b-dc6d-47f4-824e-afae444ad0c4")
-		)
-		(instances
-			(project "pocketPSU_elec_main"
-				(path "/439011d5-4dd5-4d65-a9bd-b0be402d54a5/cbe29d96-4bd9-4dd2-be02-96003f32f1da"
-					(reference "LED3")
 					(unit 1)
 				)
 			)
@@ -8874,85 +9011,6 @@
 		)
 	)
 	(symbol
-		(lib_id "footprints:XL-1606SYGC")
-		(at 226.06 130.81 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d671cf14-40b5-4978-afbe-81cf9b0bed70")
-		(property "Reference" "LED5"
-			(at 228.6 130.2999 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "XL-1606SYGC"
-			(at 228.6 132.8399 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "footprints:LED-SMD_L1.7-W1.1-RD_27-21"
-			(at 233.68 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 226.06 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 226.06 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C2290"
-			(at 236.22 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "bb96b665-1555-46fa-bba4-2d5f68a7fc45")
-		)
-		(pin "1"
-			(uuid "8549a6f8-eb64-4f1c-ada6-f3b3aa88fb49")
-		)
-		(instances
-			(project "pocketPSU_elec_main"
-				(path "/439011d5-4dd5-4d65-a9bd-b0be402d54a5/cbe29d96-4bd9-4dd2-be02-96003f32f1da"
-					(reference "LED5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Small")
 		(at 196.85 140.97 0)
 		(unit 1)
@@ -9389,6 +9447,86 @@
 			(project "pocketPSU_elec_main"
 				(path "/439011d5-4dd5-4d65-a9bd-b0be402d54a5/cbe29d96-4bd9-4dd2-be02-96003f32f1da"
 					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "footprints:F.0603.00026_P2-0603B1TS2-06T-001")
+		(at 252.73 130.81 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e68db5bc-f0bb-47e7-8947-dc8bcbb5e6d4")
+		(property "Reference" "LED3"
+			(at 255.27 130.2999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "F.0603.00026/P2-0603B1TS2-06T-001"
+			(at 255.27 132.8399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "footprints:LED0603-RD"
+			(at 260.35 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 252.73 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 252.73 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C2290"
+			(at 262.89 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e54ef02c-91a8-45c5-8f44-6bbd8e2a2f0c")
+		)
+		(pin "1"
+			(uuid "7b0742dc-8c78-4bff-8539-61e71c5980d7")
+		)
+		(instances
+			(project "pocketPSU_elec_main"
+				(path "/439011d5-4dd5-4d65-a9bd-b0be402d54a5/cbe29d96-4bd9-4dd2-be02-96003f32f1da"
+					(reference "LED3")
 					(unit 1)
 				)
 			)
