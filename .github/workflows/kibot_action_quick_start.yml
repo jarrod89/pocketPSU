@@ -7,6 +7,11 @@ on:
     # Pattern matched against refs/tags
     tags:        
       - '*'           # Push events to every tag not containing /
+    paths:
+      - '**/*.kicad_sch'
+      - '**/*.kicad_pcb'
+      - '**/*.kibot.yaml'
+      - '.github/workflows/kibot_action_quick_start.yml'
   pull_request:
     paths:
       - '**/*.kicad_sch'
