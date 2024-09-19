@@ -3,22 +3,7 @@ name: "KiBot GitHub action setup for pocketPSU"
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
 on:
-  push:
-    # Pattern matched against refs/tags
-    tags:        
-      - '*'           # Push events to every tag not containing /
-  push:
-    paths:
-      - '**/*.kicad_sch'
-      - '**/*.kicad_pcb'
-      - '**/*.kibot.yaml'
-      - '.github/workflows/kibot_action_quick_start.yml'
-  pull_request:
-    paths:
-      - '**/*.kicad_sch'
-      - '**/*.kicad_pcb'
-      - '**/*.kibot.yaml'
-      - '.github/workflows/kibot_action_quick_start.yml'
+  push
   repository_dispatch:
     types: [run_qs_gha]
 
