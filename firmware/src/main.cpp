@@ -37,10 +37,11 @@ void handleCh2OnBt() {
 
 
 void setup() {
-    
+    pinMode(42,OUTPUT);
+    digitalWrite(42,1);
     // Setup serial for debbuging.
     Serial.begin(115200); // USB serial
-    // Serial0.begin(612500);  // TTL serial
+    Serial0.begin(612500);  // TTL serial
 
     // if(ESP32Can.begin(ESP32Can.convertSpeed(250), CAN_TX, CAN_RX, 10, 10)) {
     //     Serial.println("CAN bus started!");
@@ -70,6 +71,9 @@ void setup() {
 
 void loop() {
   Serial.println("Hello World!");
+  Serial0.println("test");
+  
+    digitalWrite(42,!digitalRead(42));
   delay(1000);
   // if (Serial.available()) {      // If anything comes in Serial (USB),
   //   Serial0.write(Serial.read());   // read it and send it out Serial1 
