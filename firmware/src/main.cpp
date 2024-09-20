@@ -4,17 +4,7 @@
 #include <TFT_eWidget.h>  // Widget library
 
 #include "StateMachine.hpp"
-#define CH_1_SET_BT 5
-#define CH_2_SET_BT 8
-#define CH_1_ON_BT 7
-#define CH_2_ON_BT 34
-#define ALL_ON_OFF 21
-#define KNOB_BT 26
-#define ENCODER_A 47
-#define ENCODER_B 48
-#define LED_CH1 6
-#define LED_CH2 33
-#define LED_RED 42
+
 // #include <Encoder.h>
 // Encoder myEnc(ENCODER_A, ENCODER_B);
 
@@ -23,8 +13,8 @@ TFT_eSPI tft = TFT_eSPI();
 MeterWidget   amps  = MeterWidget(&tft);
 MeterWidget   volts = MeterWidget(&tft);
 MeterWidget   ohms  = MeterWidget(&tft);
-// #define CAN_TX		40
-// #define CAN_RX		41
+// #define CAN_TX    40
+// #define CAN_RX    41
 // CanFrame rxFrame;
 // static uint64_t u64_from_can_msg(const uint8_t m[8]);
 // static void u64_to_can_msg(const uint64_t u, uint8_t m[8]);
@@ -78,8 +68,10 @@ void setup() {
     digitalWrite(LED_RED,1);
     // Setup serial for debbuging.
     Serial.begin(115200); // USB serial
+    #ifdef ESP32
     Serial0.begin(612500);  // TTL serial
-
+    Serial0.println("test");
+    #endif
     // if(ESP32Can.begin(ESP32Can.convertSpeed(250), CAN_TX, CAN_RX, 10, 10)) {
     //     Serial.println("CAN bus started!");
     // } else {
@@ -111,7 +103,6 @@ void setup() {
     
   tft.println("Hello World!");
   Serial.println("Hello World!");
-  Serial0.println("test");
 
   
   // Colour zones are set as a start and end percentage of full scale (0-100)
