@@ -5,6 +5,8 @@
 #include <TFT_eSPI.h>
 #endif
 
+#define SERIAL_DEBUG FALSE
+
 #include "StateMachine.hpp"
 
 #define TFT_HOR_RES   240
@@ -123,6 +125,10 @@ void handleOnOffBt() {
     }
 }
 
+void handleKnobBt() {
+    digitalWrite(LED_RED, !digitalRead(LED_RED));  // Toggle LED state
+}
+
 void highlight_active_label(lv_obj_t *label) {
   // Apply the active style (black background, white text)
   lv_obj_add_style(label, &style_active, LV_PART_MAIN);
@@ -147,6 +153,7 @@ void setup() {
     pinMode(CH_1_ON_BT, INPUT_PULLUP);
     pinMode(CH_2_ON_BT, INPUT_PULLUP);
     pinMode(ALL_ON_OFF, INPUT_PULLUP);
+    pinMode(KNOB_BT, INPUT_PULLUP);
     pinMode(ENCODER_A, INPUT);
     pinMode(ENCODER_B, INPUT);
     attachInterrupt(digitalPinToInterrupt(ENCODER_A), handleEncoder,CHANGE);
@@ -155,12 +162,14 @@ void setup() {
     attachInterrupt(digitalPinToInterrupt(CH_1_ON_BT), handleCh1OnBt, FALLING);
     attachInterrupt(digitalPinToInterrupt(CH_2_ON_BT), handleCh2OnBt, FALLING);
     attachInterrupt(digitalPinToInterrupt(ALL_ON_OFF), handleOnOffBt, FALLING);
+    // attachInterrupt(digitalPinToInterrupt(KNOB_BT), handleKnobBt, FALLING);
 
+    #if SERIAL_DEBUG
     // Setup serial for debbuging.
     Serial.begin(115200);
-
     // tft.println("Hello World!");
     Serial.println("Hello World!");
+    #endif
 
     // Initialize the LVGL library
     lv_init();
@@ -206,38 +215,48 @@ void loop() {
     StateStruct currentState = state_machine.getState();
     switch (currentState.settingState) {
         case SettingState::IDLE:
+            #if SERIAL_DEBUG
             Serial.println("IDLE");
+            #endif
             // flush the encoder values
             encoderCtr = 0;
             remove_highlights();
             break;
         case SettingState::SET_VOLTAGE_CH_1:
+            #if SERIAL_DEBUG
             Serial.print("SET_VOLTAGE_CH_1: ");
             Serial.println(voltage_limit_ch1);
+            #endif
             voltage_limit_ch1 += encoderCtr;
             encoderCtr = 0;
             remove_highlights();
             highlight_active_label(voltage_limit_ch1_label);
             break;
         case SettingState::SET_CURRENT_CH_1:
+            #if SERIAL_DEBUG
             Serial.print("SET_CURRENT_CH_1: ");
             Serial.println(current_limit_ch1);
+            #endif
             current_limit_ch1 += encoderCtr;
             encoderCtr = 0;
             remove_highlights();
             highlight_active_label(current_limit_ch1_label);
             break;
         case SettingState::SET_VOLTAGE_CH_2:
+            #if SERIAL_DEBUG
             Serial.print("SET_VOLTAGE_CH_2: ");
             Serial.println(voltage_limit_ch2);
+            #endif
             voltage_limit_ch2 += encoderCtr;
             encoderCtr = 0;
             remove_highlights();
             highlight_active_label(voltage_limit_ch2_label);
             break;
         case SettingState::SET_CURRENT_CH_2:
+            #if SERIAL_DEBUG
             Serial.print("SET_CURRENT_CH_2: ");
             Serial.println(current_limit_ch2);
+            #endif
             current_limit_ch2 += encoderCtr;
             encoderCtr = 0;
             remove_highlights();
@@ -246,11 +265,9 @@ void loop() {
     }
     switch (currentState.channel1State) {
         case ChannelState::IDLE:
-            Serial.println("Channel 1 IDLE");
             digitalWrite(LED_CH1, LOW);
             break;
         case ChannelState::ON:
-            Serial.println("Channel 1 ON");
             digitalWrite(LED_CH1, HIGH);
             break;
     }
