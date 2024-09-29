@@ -5,23 +5,12 @@
 class StateMachine {
     public:
         StateMachine();
-        static void handleCh1OnBt();
-        static void handleCh2OnBt();
-        static void handleCh1SetBt();
-        static void handleCh2SetBt();
-        void getState();
+        void handleCh1OnBt();
+        void handleCh2OnBt();
+        void handleCh1SetBt();
+        void handleCh2SetBt();
+        StateStruct getState() const { return currentState; };
 
     private:
-        SettingState settingState;
-        KnobState knobState;
-        Channel1State channel1State;
-        Channel2State channel2State;
+        StateStruct currentState;
 };
-
-// Constructor definition
-StateMachine::StateMachine()
-    : settingState(SettingState::IDLE),
-      knobState(KnobState::COARSE),
-      channel1State(Channel1State::IDLE),
-      channel2State(Channel2State::IDLE)
-{}
