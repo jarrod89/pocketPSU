@@ -33,19 +33,19 @@ void StateMachine::handleCh2OnBt() {
 void StateMachine::handleCh1SetBt() {
     switch (currentState.settingState) {
         case SettingState::IDLE:
-            currentState.settingState = SettingState::SET_CURRENT_CH_2;
-            break;
-        case SettingState::SET_CURRENT_CH_1:
-            currentState.settingState = SettingState::SET_CURRENT_CH_2;
+            currentState.settingState = SettingState::SET_VOLTAGE_CH_1;
             break;
         case SettingState::SET_VOLTAGE_CH_1:
-            currentState.settingState = SettingState::SET_CURRENT_CH_2;
+            currentState.settingState = SettingState::SET_CURRENT_CH_1;
             break;
-        case SettingState::SET_CURRENT_CH_2:
-            currentState.settingState = SettingState::SET_VOLTAGE_CH_2;
+        case SettingState::SET_CURRENT_CH_1:
+            currentState.settingState = SettingState::IDLE;
             break;
         case SettingState::SET_VOLTAGE_CH_2:
-            currentState.settingState = SettingState::IDLE;
+            currentState.settingState = SettingState::SET_VOLTAGE_CH_1;
+            break;
+        case SettingState::SET_CURRENT_CH_2:
+            currentState.settingState = SettingState::SET_VOLTAGE_CH_1;
             break;
     }
 }
@@ -53,19 +53,19 @@ void StateMachine::handleCh1SetBt() {
 void StateMachine::handleCh2SetBt() {
     switch (currentState.settingState) {
         case SettingState::IDLE:
-            currentState.settingState = SettingState::SET_CURRENT_CH_1;
-            break;
-        case SettingState::SET_CURRENT_CH_1:
-            currentState.settingState = SettingState::SET_VOLTAGE_CH_1;
-            break;
-        case SettingState::SET_VOLTAGE_CH_1:
-            currentState.settingState = SettingState::IDLE;
-            break;
-        case SettingState::SET_CURRENT_CH_2:
-            currentState.settingState = SettingState::SET_CURRENT_CH_1;
+            currentState.settingState = SettingState::SET_VOLTAGE_CH_2;
             break;
         case SettingState::SET_VOLTAGE_CH_2:
-            currentState.settingState = SettingState::SET_CURRENT_CH_1;
+            currentState.settingState = SettingState::SET_CURRENT_CH_2;
+            break;
+        case SettingState::SET_CURRENT_CH_2:
+            currentState.settingState = SettingState::IDLE;
+            break;
+        case SettingState::SET_VOLTAGE_CH_1:
+            currentState.settingState = SettingState::SET_VOLTAGE_CH_2;
+            break;
+        case SettingState::SET_CURRENT_CH_1:
+            currentState.settingState = SettingState::SET_VOLTAGE_CH_2;
             break;
     }
 }
