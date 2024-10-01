@@ -1,5 +1,4 @@
 #include "StateMachine.hpp"
-#include <Arduino.h>
 
 StateMachine::StateMachine() : currentState{
         SettingState::IDLE,     // Default to IDLE state for settingState
