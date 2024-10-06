@@ -1,0 +1,6 @@
+[submodule "firmware/lib/fusb302_arduino"]
+	path = firmware/lib/fusb302_arduino
+	url = https://github.com/kcl93/fusb302_arduino.git
+[submodule "firmware/lib/FUSB302"]
+	path = firmware/lib/FUSB302
+	url = https://github.com/Starryccc/FUSB302.git

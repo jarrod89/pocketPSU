@@ -5,6 +5,13 @@
 #include <TFT_eSPI.h>
 #endif
 
+#include <Wire.h>
+#include <../lib/FUSB302/src/PD_UFP.h>
+
+#define PIN_FUSB302_INT   4
+
+class PD_UFP_c PD_UFP;
+
 #define SERIAL_DEBUG 0
 
 #include "StateMachine.hpp"
@@ -12,6 +19,9 @@
 #define TFT_HOR_RES   240
 #define TFT_VER_RES   320
 #define TFT_ROTATION  LV_DISPLAY_ROTATION_270
+
+#define SDA_PIN 2
+#define SCL_PIN 3
 
 /*LVGL draw into this buffer, 1/10 screen size usually works well. The size is in bytes*/
 #define DRAW_BUF_SIZE (TFT_HOR_RES * TFT_VER_RES / 10 * (LV_COLOR_DEPTH / 8))
@@ -33,14 +43,16 @@ static uint32_t my_tick(void)
 
 StateMachine state_machine;
 
-int voltage_limit_ch1;
-int current_limit_ch1;
-int voltage_limit_ch2;
-int current_limit_ch2;
-int voltage_ch1;
-int current_ch1;
-int voltage_ch2;
-int current_ch2;
+float voltage_limit_ch1;
+float current_limit_ch1;
+float voltage_limit_ch2;
+float current_limit_ch2;
+float voltage_ch1;
+float current_ch1;
+float power_ch1;
+float voltage_ch2;
+float current_ch2;
+float power_ch2;
 
 lv_obj_t *voltage_limit_ch1_label;
 lv_obj_t *current_limit_ch1_label;
@@ -48,19 +60,14 @@ lv_obj_t *voltage_limit_ch2_label;
 lv_obj_t *current_limit_ch2_label;
 lv_obj_t *voltage_ch1_label;
 lv_obj_t *current_ch1_label;
+lv_obj_t *power_ch1_label;
 lv_obj_t *voltage_ch2_label;
 lv_obj_t *current_ch2_label;
+lv_obj_t *power_ch2_label;
 
-// static lv_style_t style_normal;
-// static lv_style_t style_active;
+static lv_style_t style_normal;
+static lv_style_t style_active;
 
-
-// // #define CAN_TX    40
-// // #define CAN_RX    41
-// // CanFrame rxFrame;
-// // static uint64_t u64_from_can_msg(const uint8_t m[8]);
-// // static void u64_to_can_msg(const uint64_t u, uint8_t m[8]);
-// float mapValue(float ip, float ipmin, float ipmax, float tomin, float tomax);
 
 volatile long encoderCtr = 0;
 
@@ -127,39 +134,39 @@ void handleOnOffBt() {
 //     digitalWrite(LED_RED, !digitalRead(LED_RED));  // Toggle LED state
 // }
 
-// void highlight_active_label(lv_obj_t *label) {
-//   // Apply the active style (black background, white text)
-//   lv_obj_add_style(label, &style_active, LV_PART_MAIN);
-// }
+void highlight_active_label(lv_obj_t *label) {
+  // Apply the active style (black background, white text)
+  lv_obj_add_style(label, &style_active, LV_PART_MAIN);
+}
 
 // remove the highlight after update
-// void remove_highlights() {
-//     lv_obj_add_style(voltage_limit_ch1_label, &style_normal, LV_PART_MAIN);
-//     lv_obj_add_style(current_limit_ch1_label, &style_normal, LV_PART_MAIN);
-//     lv_obj_add_style(voltage_limit_ch2_label, &style_normal, LV_PART_MAIN);
-//     lv_obj_add_style(current_limit_ch2_label, &style_normal, LV_PART_MAIN);
-// }
+void remove_highlights() {
+    lv_obj_add_style(voltage_limit_ch1_label, &style_normal, LV_PART_MAIN);
+    lv_obj_add_style(current_limit_ch1_label, &style_normal, LV_PART_MAIN);
+    lv_obj_add_style(voltage_limit_ch2_label, &style_normal, LV_PART_MAIN);
+    lv_obj_add_style(current_limit_ch2_label, &style_normal, LV_PART_MAIN);
+}
 
 
 void setup() {
-    pinMode(LED_RED, OUTPUT);
-    pinMode(LED_CH1, OUTPUT);
-    pinMode(LED_CH2, OUTPUT);
+    // pinMode(LED_RED, OUTPUT);
+    // pinMode(LED_CH1, OUTPUT);
+    // pinMode(LED_CH2, OUTPUT);
 
-    pinMode(CH_1_SET_BT, INPUT_PULLUP);
-    pinMode(CH_2_SET_BT, INPUT_PULLUP);
-    pinMode(CH_1_ON_BT, INPUT_PULLUP);
-    pinMode(CH_2_ON_BT, INPUT_PULLUP);
-    pinMode(ALL_ON_OFF, INPUT_PULLUP);
-    // pinMode(KNOB_BT, INPUT);
-    pinMode(ENCODER_A, INPUT);
-    pinMode(ENCODER_B, INPUT);
-    attachInterrupt(digitalPinToInterrupt(ENCODER_A), handleEncoder,CHANGE);
-    attachInterrupt(digitalPinToInterrupt(CH_1_SET_BT), handleCh1SetBt, FALLING);
-    attachInterrupt(digitalPinToInterrupt(CH_2_SET_BT), handleCh2SetBt, FALLING);
-    attachInterrupt(digitalPinToInterrupt(CH_1_ON_BT), handleCh1OnBt, FALLING);
-    attachInterrupt(digitalPinToInterrupt(CH_2_ON_BT), handleCh2OnBt, FALLING);
-    attachInterrupt(digitalPinToInterrupt(ALL_ON_OFF), handleOnOffBt, FALLING);
+    // pinMode(CH_1_SET_BT, INPUT_PULLUP);
+    // pinMode(CH_2_SET_BT, INPUT_PULLUP);
+    // pinMode(CH_1_ON_BT, INPUT_PULLUP);
+    // pinMode(CH_2_ON_BT, INPUT_PULLUP);
+    // pinMode(ALL_ON_OFF, INPUT_PULLUP);
+    // // pinMode(KNOB_BT, INPUT);
+    // pinMode(ENCODER_A, INPUT);
+    // pinMode(ENCODER_B, INPUT);
+    // attachInterrupt(digitalPinToInterrupt(ENCODER_A), handleEncoder,CHANGE);
+    // attachInterrupt(digitalPinToInterrupt(CH_1_SET_BT), handleCh1SetBt, FALLING);
+    // attachInterrupt(digitalPinToInterrupt(CH_2_SET_BT), handleCh2SetBt, FALLING);
+    // attachInterrupt(digitalPinToInterrupt(CH_1_ON_BT), handleCh1OnBt, FALLING);
+    // attachInterrupt(digitalPinToInterrupt(CH_2_ON_BT), handleCh2OnBt, FALLING);
+    // attachInterrupt(digitalPinToInterrupt(ALL_ON_OFF), handleOnOffBt, FALLING);
     // attachInterrupt(digitalPinToInterrupt(KNOB_BT), handleKnobBt, FALLING);
 
     #if SERIAL_DEBUG
@@ -169,11 +176,17 @@ void setup() {
     Serial.println("Hello World!");
     #endif
 
-    // //Initialize the LVGL library
-    lv_init();
+    Wire.begin(SDA_PIN, SCL_PIN);
+    // on pin 4
+    PD_UFP.set_fusb302_int_pin(PIN_FUSB302_INT);
+    PD_UFP.init(PD_POWER_OPTION_MAX_5V);
+    // PD_UFP.init_PPS(PPS_V(5), PPS_A(.5));
 
-    /*Set a tick source so that LVGL will know how much time elapsed. */
-    lv_tick_set_cb(my_tick);
+    // // //Initialize the LVGL library
+    // lv_init();
+
+    // /*Set a tick source so that LVGL will know how much time elapsed. */
+    // lv_tick_set_cb(my_tick);
 
     // lv_style_init(&style_normal);
     // lv_style_set_bg_opa(&style_normal, LV_OPA_TRANSP);  // No background
@@ -184,35 +197,57 @@ void setup() {
     // lv_style_set_bg_color(&style_active, lv_color_hex(0x000000));  // Black background
     // lv_style_set_text_color(&style_active, lv_color_hex(0xFFFFFF));  // White text
 
-    // alternative function: lv_obj_set_style_text_color(thing, lv_color_black(), LV_PART_MAIN);
+    // // alternative function: lv_obj_set_style_text_color(thing, lv_color_black(), LV_PART_MAIN);
 
 
-    lv_display_t * disp;
-    /*TFT_eSPI can be enabled lv_conf.h to initialize the display in a simple way*/
-    disp = lv_tft_espi_create(TFT_HOR_RES, TFT_VER_RES, draw_buf, sizeof(draw_buf));
-    lv_display_set_rotation(disp, TFT_ROTATION);
+    // lv_display_t * disp;
+    // /*TFT_eSPI can be enabled lv_conf.h to initialize the display in a simple way*/
+    // disp = lv_tft_espi_create(TFT_HOR_RES, TFT_VER_RES, draw_buf, sizeof(draw_buf));
+    // lv_display_set_rotation(disp, TFT_ROTATION);
 
     // // Initialize the labels on screen
     // // CH1
     // voltage_ch1_label = lv_label_create(lv_scr_act());
-    // lv_label_set_text_fmt(voltage_limit_ch1_label, "%d V", voltage_limit_ch1);
-    // lv_obj_align(voltage_limit_ch1_label, LV_ALIGN_TOP_LEFT, 10, 10);  // Position the label
+    // lv_label_set_text_fmt(voltage_ch1_label, "%.3fV", voltage_ch1);
+    // lv_obj_align(voltage_ch1_label, LV_ALIGN_TOP_LEFT, 10, 50);
 
     // current_ch1_label = lv_label_create(lv_scr_act());
-    // lv_label_set_text_fmt(current_limit_ch1_label, "%d A", current_limit_ch1);
-    // lv_obj_align(current_limit_ch1_label, LV_ALIGN_TOP_LEFT, 10, 40);  // Position the label
+    // lv_label_set_text_fmt(current_ch1_label, "%.3fV", current_ch1);
+    // lv_obj_align(current_ch1_label, LV_ALIGN_TOP_LEFT, 10, 80);
 
-    // // lv_obj_t *set_txt_ch1 = lv_label_create(lv_scr_act());
-    // // lv_label_set_text(set_txt_ch1, "set");
-    // // lv_obj_align(voltage_limit_ch1_label, LV_ALIGN_TOP_LEFT, 10, 100);  // Position the label
+    // lv_obj_t *set_txt_ch1 = lv_label_create(lv_scr_act());
+    // lv_label_set_text(set_txt_ch1, "set");
+    // lv_obj_align(set_txt_ch1, LV_ALIGN_TOP_LEFT, 5, 200);
 
     // voltage_limit_ch1_label = lv_label_create(lv_scr_act());
-    // lv_label_set_text_fmt(voltage_limit_ch1_label, "%d V", voltage_limit_ch1);
-    // lv_obj_align(voltage_limit_ch1_label, LV_ALIGN_TOP_LEFT, 60, 100);  // Position the label
+    // lv_label_set_text_fmt(voltage_limit_ch1_label, "%fV", voltage_limit_ch1);
+    // lv_obj_align(voltage_limit_ch1_label, LV_ALIGN_TOP_LEFT, 30, 200);
 
     // current_limit_ch1_label = lv_label_create(lv_scr_act());
-    // lv_label_set_text_fmt(current_limit_ch1_label, "%d A", current_limit_ch1);
-    // lv_obj_align(current_limit_ch1_label, LV_ALIGN_TOP_LEFT, 120, 10);  // Position the label
+    // lv_label_set_text_fmt(current_limit_ch1_label, "%fA", current_limit_ch1);
+    // lv_obj_align(current_limit_ch1_label, LV_ALIGN_TOP_LEFT, 90, 200);
+
+    // // CH2
+
+    // voltage_ch2_label = lv_label_create(lv_scr_act());
+    // lv_label_set_text_fmt(voltage_ch2_label, "%fV", voltage_ch2);
+    // lv_obj_align(voltage_ch2_label, LV_ALIGN_TOP_LEFT, 170, 50);
+
+    // current_ch2_label = lv_label_create(lv_scr_act());
+    // lv_label_set_text_fmt(current_ch2_label, "%fV", current_ch2);
+    // lv_obj_align(current_ch2_label, LV_ALIGN_TOP_LEFT, 170, 80);
+
+    // lv_obj_t *set_txt_ch2 = lv_label_create(lv_scr_act());
+    // lv_label_set_text(set_txt_ch2, "set");
+    // lv_obj_align(set_txt_ch2, LV_ALIGN_TOP_LEFT, 165, 200);
+
+    // voltage_limit_ch2_label = lv_label_create(lv_scr_act());
+    // lv_label_set_text_fmt(voltage_limit_ch2_label, "%fV", voltage_limit_ch2);
+    // lv_obj_align(voltage_limit_ch2_label, LV_ALIGN_TOP_LEFT, 190, 200);  // Position the label
+
+    // current_limit_ch2_label = lv_label_create(lv_scr_act());
+    // lv_label_set_text_fmt(current_limit_ch2_label, "%fA", current_limit_ch2);
+    // lv_obj_align(current_limit_ch2_label, LV_ALIGN_TOP_LEFT, 250, 200);  // Position the label
 
     // // CH2
 
@@ -227,78 +262,89 @@ void setup() {
 
 void loop() {
 
-    StateStruct currentState = state_machine.getState();
-    switch (currentState.settingState) {
-        case SettingState::IDLE:
-            #if SERIAL_DEBUG
-            Serial.println("IDLE");
-            #endif
-            // flush the encoder values
-            encoderCtr = 0;
-            // remove_highlights();
-            break;
-        case SettingState::SET_VOLTAGE_CH_1:
-            #if SERIAL_DEBUG
-            Serial.print("SET_VOLTAGE_CH_1: ");
-            Serial.println(voltage_limit_ch1);
-            #endif
-            voltage_limit_ch1 += encoderCtr;
-            encoderCtr = 0;
-            // remove_highlights();
-            // highlight_active_label(voltage_limit_ch1_label);
-            break;
-        case SettingState::SET_CURRENT_CH_1:
-            #if SERIAL_DEBUG
-            Serial.print("SET_CURRENT_CH_1: ");
-            Serial.println(current_limit_ch1);
-            #endif
-            current_limit_ch1 += encoderCtr;
-            encoderCtr = 0;
-            // remove_highlights();
-            // highlight_active_label(current_limit_ch1_label);
-            break;
-        case SettingState::SET_VOLTAGE_CH_2:
-            #if SERIAL_DEBUG
-            Serial.print("SET_VOLTAGE_CH_2: ");
-            Serial.println(voltage_limit_ch2);
-            #endif
-            voltage_limit_ch2 += encoderCtr;
-            encoderCtr = 0;
-            // remove_highlights();
-            // highlight_active_label(voltage_limit_ch2_label);
-            break;
-        case SettingState::SET_CURRENT_CH_2:
-            #if SERIAL_DEBUG
-            Serial.print("SET_CURRENT_CH_2: ");
-            Serial.println(current_limit_ch2);
-            #endif
-            current_limit_ch2 += encoderCtr;
-            encoderCtr = 0;
-            // remove_highlights();
-            // highlight_active_label(current_limit_ch2_label);
-            break;
+    // StateStruct currentState = state_machine.getState();
+    // switch (currentState.settingState) {
+    //     case SettingState::IDLE:
+    //         #if SERIAL_DEBUG
+    //         Serial.println("IDLE");
+    //         #endif
+    //         // flush the encoder values
+    //         encoderCtr = 0;
+    //         remove_highlights();
+    //         break;
+    //     case SettingState::SET_VOLTAGE_CH_1:
+    //         #if SERIAL_DEBUG
+    //         Serial.print("SET_VOLTAGE_CH_1: ");
+    //         Serial.println(voltage_limit_ch1);
+    //         #endif
+    //         voltage_limit_ch1 += encoderCtr;
+    //         encoderCtr = 0;
+    //         remove_highlights();
+    //         highlight_active_label(voltage_limit_ch1_label);
+    //         break;
+    //     case SettingState::SET_CURRENT_CH_1:
+    //         #if SERIAL_DEBUG
+    //         Serial.print("SET_CURRENT_CH_1: ");
+    //         Serial.println(current_limit_ch1);
+    //         #endif
+    //         current_limit_ch1 += encoderCtr;
+    //         encoderCtr = 0;
+    //         remove_highlights();
+    //         highlight_active_label(current_limit_ch1_label);
+    //         break;
+    //     case SettingState::SET_VOLTAGE_CH_2:
+    //         #if SERIAL_DEBUG
+    //         Serial.print("SET_VOLTAGE_CH_2: ");
+    //         Serial.println(voltage_limit_ch2);
+    //         #endif
+    //         voltage_limit_ch2 += encoderCtr;
+    //         encoderCtr = 0;
+    //         remove_highlights();
+    //         highlight_active_label(voltage_limit_ch2_label);
+    //         break;
+    //     case SettingState::SET_CURRENT_CH_2:
+    //         #if SERIAL_DEBUG
+    //         Serial.print("SET_CURRENT_CH_2: ");
+    //         Serial.println(current_limit_ch2);
+    //         #endif
+    //         current_limit_ch2 += encoderCtr;
+    //         encoderCtr = 0;
+    //         remove_highlights();
+    //         highlight_active_label(current_limit_ch2_label);
+    //         break;
+    // }
+    // switch (currentState.channel1State) {
+    //     case ChannelState::IDLE:
+    //         digitalWrite(LED_CH1, LOW);
+    //         break;
+    //     case ChannelState::ON:
+    //         digitalWrite(LED_CH1, HIGH);
+    //         break;
+    // }
+    // switch (currentState.channel2State) {
+    //     case ChannelState::IDLE:
+    //         digitalWrite(LED_CH2, LOW);
+    //         break;
+    //     case ChannelState::ON:
+    //         digitalWrite(LED_CH2, HIGH);
+    //         break;
+    // }
+    // lv_label_set_text_fmt(voltage_limit_ch1_label, "%.3fV", voltage_limit_ch1);
+    // lv_label_set_text_fmt(current_limit_ch1_label, "%.3fA", current_limit_ch1);
+    // lv_label_set_text_fmt(voltage_limit_ch2_label, "%.3fV", voltage_limit_ch2);
+    // lv_label_set_text_fmt(current_limit_ch2_label, "%.3fA", current_limit_ch2);
+    // lv_timer_handler(); /* let the GUI do its work */
+
+    PD_UFP.run();
+    if (PD_UFP.is_PPS_ready())
+    {
+        Serial.println("PPS trigger success");
+
     }
-    switch (currentState.channel1State) {
-        case ChannelState::IDLE:
-            digitalWrite(LED_CH1, LOW);
-            break;
-        case ChannelState::ON:
-            digitalWrite(LED_CH1, HIGH);
-            break;
+    else if (PD_UFP.is_power_ready())
+    {
+        Serial.println("Fail to trigger PPS, fall back");
     }
-    switch (currentState.channel2State) {
-        case ChannelState::IDLE:
-            digitalWrite(LED_CH2, LOW);
-            break;
-        case ChannelState::ON:
-            digitalWrite(LED_CH2, HIGH);
-            break;
-    }
-    lv_label_set_text_fmt(voltage_limit_ch1_label, "Voltage ch1: %d V", voltage_limit_ch1);
-    lv_label_set_text_fmt(current_limit_ch1_label, "Current ch1: %d A", current_limit_ch1);
-    lv_label_set_text_fmt(voltage_limit_ch2_label, "Voltage ch2: %d V", voltage_limit_ch2);
-    lv_label_set_text_fmt(current_limit_ch2_label, "Current ch2: %d A", current_limit_ch2);
-    lv_timer_handler(); /* let the GUI do its work */
     delay(50);
 }
 
