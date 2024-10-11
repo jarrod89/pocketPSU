@@ -6,13 +6,13 @@
 #endif
 
 #include <Wire.h>
-#include <../lib/FUSB302/src/PD_UFP.h>
+#include <../lib/fusb302_arduino/src/PD_UFP.h>
 
 #define PIN_FUSB302_INT   4
 
-class PD_UFP_c PD_UFP;
+class PD_UFP_Log_c PD_UFP;
 
-#define SERIAL_DEBUG 0
+#define SERIAL_DEBUG 1
 
 #include "StateMachine.hpp"
 
@@ -23,129 +23,131 @@ class PD_UFP_c PD_UFP;
 #define SDA_PIN 2
 #define SCL_PIN 3
 
-/*LVGL draw into this buffer, 1/10 screen size usually works well. The size is in bytes*/
-#define DRAW_BUF_SIZE (TFT_HOR_RES * TFT_VER_RES / 10 * (LV_COLOR_DEPTH / 8))
-uint32_t draw_buf[DRAW_BUF_SIZE / 4];
 
-/* LVGL calls it when a rendered image needs to copied to the display*/
-void my_disp_flush( lv_display_t *disp, const lv_area_t *area, uint8_t * px_map)
-{
-    /*Call it to tell LVGL you are ready*/
-    lv_display_flush_ready(disp);
-}
+// /*LVGL draw into this buffer, 1/10 screen size usually works well. The size is in bytes*/
+// #define DRAW_BUF_SIZE (TFT_HOR_RES * TFT_VER_RES / 10 * (LV_COLOR_DEPTH / 8))
+// uint32_t draw_buf[DRAW_BUF_SIZE / 4];
 
-/*use Arduinos millis() as tick source*/
-static uint32_t my_tick(void)
-{
-    return millis();
-}
-
-
-StateMachine state_machine;
-
-float voltage_limit_ch1;
-float current_limit_ch1;
-float voltage_limit_ch2;
-float current_limit_ch2;
-float voltage_ch1;
-float current_ch1;
-float power_ch1;
-float voltage_ch2;
-float current_ch2;
-float power_ch2;
-
-lv_obj_t *voltage_limit_ch1_label;
-lv_obj_t *current_limit_ch1_label;
-lv_obj_t *voltage_limit_ch2_label;
-lv_obj_t *current_limit_ch2_label;
-lv_obj_t *voltage_ch1_label;
-lv_obj_t *current_ch1_label;
-lv_obj_t *power_ch1_label;
-lv_obj_t *voltage_ch2_label;
-lv_obj_t *current_ch2_label;
-lv_obj_t *power_ch2_label;
-
-static lv_style_t style_normal;
-static lv_style_t style_active;
-
-
-volatile long encoderCtr = 0;
-
-void handleEncoder() {
-    if(digitalRead(ENCODER_A))
-    {
-        if(digitalRead(ENCODER_B))
-        encoderCtr++;
-        else
-        encoderCtr--;
-    }
-    else
-    {
-        if(digitalRead(ENCODER_B))
-        encoderCtr--;
-        else
-        encoderCtr++;
-    }
-}
-volatile unsigned long lastDebounceTimeCh1Set = 0;  // Variables to store last debounce time
-volatile unsigned long lastDebounceTimeCh2Set = 0;
-volatile unsigned long lastDebounceTimeCh1On = 0;
-volatile unsigned long lastDebounceTimeCh2On = 0;
-volatile unsigned long lastDebounceTimeOnOff = 0;
-
-const unsigned long debounceDelay = 200;  // Set debounce delay to 50ms
-
-void handleCh1SetBt() {
-    if ((millis() - lastDebounceTimeCh1Set) > debounceDelay) {
-        lastDebounceTimeCh1Set = millis();  // Update last debounce time
-        state_machine.handleCh1SetBt();  // Your existing function
-    }
-}
-
-void handleCh2SetBt() {
-    if ((millis() - lastDebounceTimeCh2Set) > debounceDelay) {
-        lastDebounceTimeCh2Set = millis();
-        state_machine.handleCh2SetBt();
-    }
-}
-
-void handleCh1OnBt() {
-    if ((millis() - lastDebounceTimeCh1On) > debounceDelay) {
-        lastDebounceTimeCh1On = millis();
-        state_machine.handleCh1OnBt();  // Call your state handling logic
-    }
-}
-
-void handleCh2OnBt() {
-    if ((millis() - lastDebounceTimeCh2On) > debounceDelay) {
-        lastDebounceTimeCh2On = millis();
-        state_machine.handleCh2OnBt();
-    }
-}
-
-void handleOnOffBt() {
-    if ((millis() - lastDebounceTimeOnOff) > debounceDelay) {
-        lastDebounceTimeOnOff = millis();
-        digitalWrite(LED_RED, !digitalRead(LED_RED));  // Toggle LED state
-    }
-}
-
-// void handleKnobBt() {
-//     digitalWrite(LED_RED, !digitalRead(LED_RED));  // Toggle LED state
+// /* LVGL calls it when a rendered image needs to copied to the display*/
+// void my_disp_flush( lv_display_t *disp, const lv_area_t *area, uint8_t * px_map)
+// {
+//     /*Call it to tell LVGL you are ready*/
+//     lv_display_flush_ready(disp);
 // }
 
-void highlight_active_label(lv_obj_t *label) {
-  // Apply the active style (black background, white text)
-  lv_obj_add_style(label, &style_active, LV_PART_MAIN);
-}
+// /*use Arduinos millis() as tick source*/
+// static uint32_t my_tick(void)
+// {
+//     return millis();
+// }
 
-// remove the highlight after update
-void remove_highlights() {
-    lv_obj_add_style(voltage_limit_ch1_label, &style_normal, LV_PART_MAIN);
-    lv_obj_add_style(current_limit_ch1_label, &style_normal, LV_PART_MAIN);
-    lv_obj_add_style(voltage_limit_ch2_label, &style_normal, LV_PART_MAIN);
-    lv_obj_add_style(current_limit_ch2_label, &style_normal, LV_PART_MAIN);
-}
+
+// StateMachine state_machine;
+
+// float voltage_limit_ch1;
+// float current_limit_ch1;
+// float voltage_limit_ch2;
+// float current_limit_ch2;
+// float voltage_ch1;
+// float current_ch1;
+// float power_ch1;
+// float voltage_ch2;
+// float current_ch2;
+// float power_ch2;
+
+// lv_obj_t *voltage_limit_ch1_label;
+// lv_obj_t *current_limit_ch1_label;
+// lv_obj_t *voltage_limit_ch2_label;
+// lv_obj_t *current_limit_ch2_label;
+// lv_obj_t *voltage_ch1_label;
+// lv_obj_t *current_ch1_label;
+// lv_obj_t *power_ch1_label;
+// lv_obj_t *voltage_ch2_label;
+// lv_obj_t *current_ch2_label;
+// lv_obj_t *power_ch2_label;
+
+// static lv_style_t style_normal;
+// static lv_style_t style_active;
+
+
+// volatile long encoderCtr = 0;
+
+// void handleEncoder() {
+//     if(digitalRead(ENCODER_A))
+//     {
+//         if(digitalRead(ENCODER_B))
+//         encoderCtr++;
+//         else
+//         encoderCtr--;
+//     }
+//     else
+//     {
+//         if(digitalRead(ENCODER_B))
+//         encoderCtr--;
+//         else
+//         encoderCtr++;
+//     }
+// }
+// volatile unsigned long lastDebounceTimeCh1Set = 0;  // Variables to store last debounce time
+// volatile unsigned long lastDebounceTimeCh2Set = 0;
+// volatile unsigned long lastDebounceTimeCh1On = 0;
+// volatile unsigned long lastDebounceTimeCh2On = 0;
+// volatile unsigned long lastDebounceTimeOnOff = 0;
+
+// const unsigned long debounceDelay = 200;  // Set debounce delay to 50ms
+
+// void handleCh1SetBt() {
+//     if ((millis() - lastDebounceTimeCh1Set) > debounceDelay) {
+//         lastDebounceTimeCh1Set = millis();  // Update last debounce time
+//         state_machine.handleCh1SetBt();  // Your existing function
+//     }
+// }
+
+// void handleCh2SetBt() {
+//     if ((millis() - lastDebounceTimeCh2Set) > debounceDelay) {
+//         lastDebounceTimeCh2Set = millis();
+//         state_machine.handleCh2SetBt();
+//     }
+// }
+
+// void handleCh1OnBt() {
+//     if ((millis() - lastDebounceTimeCh1On) > debounceDelay) {
+//         lastDebounceTimeCh1On = millis();
+//         state_machine.handleCh1OnBt();  // Call your state handling logic
+//     }
+// }
+
+// void handleCh2OnBt() {
+//     if ((millis() - lastDebounceTimeCh2On) > debounceDelay) {
+//         lastDebounceTimeCh2On = millis();
+//         state_machine.handleCh2OnBt();
+//     }
+// }
+
+// void handleOnOffBt() {
+//     if ((millis() - lastDebounceTimeOnOff) > debounceDelay) {
+//         lastDebounceTimeOnOff = millis();
+//         digitalWrite(LED_RED, !digitalRead(LED_RED));  // Toggle LED state
+//     }
+// }
+
+// // void handleKnobBt() {
+// //     digitalWrite(LED_RED, !digitalRead(LED_RED));  // Toggle LED state
+// // }
+
+// void highlight_active_label(lv_obj_t *label) {
+//   // Apply the active style (black background, white text)
+//   lv_obj_add_style(label, &style_active, LV_PART_MAIN);
+// }
+
+// // remove the highlight after update
+// void remove_highlights() {
+//     lv_obj_add_style(voltage_limit_ch1_label, &style_normal, LV_PART_MAIN);
+//     lv_obj_add_style(current_limit_ch1_label, &style_normal, LV_PART_MAIN);
+//     lv_obj_add_style(voltage_limit_ch2_label, &style_normal, LV_PART_MAIN);
+//     lv_obj_add_style(current_limit_ch2_label, &style_normal, LV_PART_MAIN);
+// }
+
 
 
 void setup() {
@@ -177,10 +179,13 @@ void setup() {
     #endif
 
     Wire.begin(SDA_PIN, SCL_PIN);
-    // on pin 4
-    PD_UFP.set_fusb302_int_pin(PIN_FUSB302_INT);
-    PD_UFP.init(PD_POWER_OPTION_MAX_5V);
+    // // on pin 4
+    // // PD_UFP.set_fusb302_int_pin(PIN_FUSB302_INT);
+    PD_UFP.init(PIN_FUSB302_INT, PD_POWER_OPTION_MAX_9V);
     // PD_UFP.init_PPS(PPS_V(5), PPS_A(.5));
+
+    Serial1.begin(19200, SERIAL_8N1, 37, 38);
+    Serial1.println("Startup");
 
     // // //Initialize the LVGL library
     // lv_init();
@@ -336,16 +341,20 @@ void loop() {
     // lv_timer_handler(); /* let the GUI do its work */
 
     PD_UFP.run();
-    if (PD_UFP.is_PPS_ready())
-    {
-        Serial.println("PPS trigger success");
+    PD_UFP.print_status(Serial1);
+    // if (PD_UFP.is_PPS_ready())
+    // {
+    //     Serial.println("PPS trigger success");
 
-    }
-    else if (PD_UFP.is_power_ready())
-    {
-        Serial.println("Fail to trigger PPS, fall back");
-    }
-    delay(50);
+    // }
+    // else if (PD_UFP.is_power_ready())
+    // {
+    //     Serial.println("Fail to trigger PPS, fall back");
+    // }
+    // else
+    // {
+    //     Serial.println("No power ready");
+    // }
 }
 
 float mapValue(float ip, float ipmin, float ipmax, float tomin, float tomax)
