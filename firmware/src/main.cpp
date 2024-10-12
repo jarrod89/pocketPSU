@@ -6,7 +6,7 @@
 #endif
 
 #include <Wire.h>
-#include <../lib/fusb302_arduino/src/PD_UFP.h>
+#include <PD_UFP.h>
 
 #define PIN_FUSB302_INT   4
 
@@ -151,7 +151,9 @@ class PD_UFP_Log_c PD_UFP;
 
 
 void setup() {
-    // pinMode(LED_RED, OUTPUT);
+    pinMode(LED_RED, OUTPUT);
+    digitalWrite(LED_RED, 1);
+    delay(100);
     // pinMode(LED_CH1, OUTPUT);
     // pinMode(LED_CH2, OUTPUT);
 
@@ -178,14 +180,14 @@ void setup() {
     Serial.println("Hello World!");
     #endif
 
-    Wire.begin(SDA_PIN, SCL_PIN);
-    // // on pin 4
-    // // PD_UFP.set_fusb302_int_pin(PIN_FUSB302_INT);
-    PD_UFP.init(PIN_FUSB302_INT, PD_POWER_OPTION_MAX_9V);
-    // PD_UFP.init_PPS(PPS_V(5), PPS_A(.5));
+    // Setup UART0 for debugging
+    Serial0.begin(115200);
+    Serial0.println("Startup");
 
-    Serial1.begin(19200, SERIAL_8N1, 37, 38);
-    Serial1.println("Startup");
+    Wire.begin(SDA_PIN, SCL_PIN, 100000);
+    //PD_UFP.init(PIN_FUSB302_INT, PD_POWER_OPTION_MAX_9V);
+    // PD_UFP.init_PPS(PIN_FUSB302_INT, PPS_V(5.5), PPS_A(.5));
+    PD_UFP.init_PPS(PIN_FUSB302_INT, PPS_V(8.4), PPS_A(2.0));
 
     // // //Initialize the LVGL library
     // lv_init();
@@ -341,20 +343,22 @@ void loop() {
     // lv_timer_handler(); /* let the GUI do its work */
 
     PD_UFP.run();
-    PD_UFP.print_status(Serial1);
-    // if (PD_UFP.is_PPS_ready())
-    // {
-    //     Serial.println("PPS trigger success");
-
-    // }
-    // else if (PD_UFP.is_power_ready())
-    // {
-    //     Serial.println("Fail to trigger PPS, fall back");
-    // }
-    // else
-    // {
-    //     Serial.println("No power ready");
-    // }
+    
+    // // Serial0.println("run");
+    PD_UFP.print_status(Serial0);
+    if (PD_UFP.is_PPS_ready())
+    {
+      Serial0.println("PPS trigger success");
+    }
+    else if (PD_UFP.is_power_ready())
+    {
+      Serial0.println("Fail to trigger PPS, fall back");
+    }
+    else
+    {
+      digitalWrite(LED_RED, !digitalRead(LED_RED));  // Toggle LED state  
+    }
+    // delay(10);
 }
 
 float mapValue(float ip, float ipmin, float ipmax, float tomin, float tomax)
