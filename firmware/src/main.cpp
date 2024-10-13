@@ -185,9 +185,9 @@ void setup() {
     Serial0.println("Startup");
 
     Wire.begin(SDA_PIN, SCL_PIN, 100000);
-    //PD_UFP.init(PIN_FUSB302_INT, PD_POWER_OPTION_MAX_9V);
+    PD_UFP.init(PIN_FUSB302_INT, PD_POWER_OPTION_MAX_9V);
     // PD_UFP.init_PPS(PIN_FUSB302_INT, PPS_V(5.5), PPS_A(.5));
-    PD_UFP.init_PPS(PIN_FUSB302_INT, PPS_V(8.4), PPS_A(2.0));
+    // PD_UFP.init_PPS(PIN_FUSB302_INT, PPS_V(8.4), PPS_A(2.0));
 
     // // //Initialize the LVGL library
     // lv_init();
