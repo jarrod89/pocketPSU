@@ -187,7 +187,7 @@ void setup() {
     Wire.begin(SDA_PIN, SCL_PIN, 100000);
     PD_UFP.init(PIN_FUSB302_INT, PD_POWER_OPTION_MAX_9V);
     // PD_UFP.init_PPS(PIN_FUSB302_INT, PPS_V(5.5), PPS_A(.5));
-    // PD_UFP.init_PPS(PIN_FUSB302_INT, PPS_V(8.4), PPS_A(2.0));
+    PD_UFP.init_PPS(PIN_FUSB302_INT, PPS_V(9.0), PPS_A(5.0));
 
     // // //Initialize the LVGL library
     // lv_init();
@@ -343,22 +343,32 @@ void loop() {
     // lv_timer_handler(); /* let the GUI do its work */
 
     PD_UFP.run();
-    
+    static int pd_status = 0;
     // // Serial0.println("run");
     PD_UFP.print_status(Serial0);
     if (PD_UFP.is_PPS_ready())
     {
+      if (pd_status != 1){
+      pd_status = 1;
       Serial0.println("PPS trigger success");
+      }
     }
     else if (PD_UFP.is_power_ready())
     {
+      if (pd_status != 2){
+      pd_status = 2;
       Serial0.println("Fail to trigger PPS, fall back");
+      }
     }
     else
     {
-      digitalWrite(LED_RED, !digitalRead(LED_RED));  // Toggle LED state  
+      if (pd_status != 3){
+      pd_status = 3;
+      Serial0.println("PD not ready");
+      }
     }
-    // delay(10);
+    //delay(10);
+    digitalWrite(LED_RED, !digitalRead(LED_RED));  // Toggle LED state  
 }
 
 float mapValue(float ip, float ipmin, float ipmax, float tomin, float tomax)
