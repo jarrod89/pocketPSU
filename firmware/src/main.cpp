@@ -153,6 +153,8 @@ class PD_UFP_Log_c PD_UFP;
 void setup() {
     pinMode(LED_RED, OUTPUT);
     digitalWrite(LED_RED, 1);
+    pinMode(DEBUG_PIN, OUTPUT);
+    digitalWrite(DEBUG_PIN, 1);
     delay(100);
     // pinMode(LED_CH1, OUTPUT);
     // pinMode(LED_CH2, OUTPUT);
@@ -185,9 +187,9 @@ void setup() {
     Serial0.println("Startup");
 
     Wire.begin(SDA_PIN, SCL_PIN, 100000);
-    PD_UFP.init(PIN_FUSB302_INT, PD_POWER_OPTION_MAX_9V);
+    PD_UFP.init(PIN_FUSB302_INT, PD_POWER_OPTION_MAX_15V);
     // PD_UFP.init_PPS(PIN_FUSB302_INT, PPS_V(5.5), PPS_A(.5));
-    PD_UFP.init_PPS(PIN_FUSB302_INT, PPS_V(9.0), PPS_A(5.0));
+    PD_UFP.init_PPS(PIN_FUSB302_INT, PPS_V(15.0), PPS_A(1));
 
     // // //Initialize the LVGL library
     // lv_init();
@@ -343,32 +345,54 @@ void loop() {
     // lv_timer_handler(); /* let the GUI do its work */
 
     PD_UFP.run();
-    static int pd_status = 0;
     // // Serial0.println("run");
     PD_UFP.print_status(Serial0);
+
+    static bool pd_pps = 0;
     if (PD_UFP.is_PPS_ready())
     {
-      if (pd_status != 1){
-      pd_status = 1;
-      Serial0.println("PPS trigger success");
+      if (not pd_pps){
+        pd_pps = 1;
+        Serial0.println("-- PPS trigger success");
       }
     }
-    else if (PD_UFP.is_power_ready())
+    else if (pd_pps){
+      pd_pps = 0;
+      Serial0.println("-- PPS not ready");
+    }
+
+    static bool pd_transition = 0;
+    if (PD_UFP.is_ps_transition())
     {
-      if (pd_status != 2){
-      pd_status = 2;
-      Serial0.println("Fail to trigger PPS, fall back");
+      if (not pd_transition){
+        digitalWrite(LED_RED, 1);
+        //digitalWrite(DEBUG_PIN, 1);
+        pd_transition = 1;
+        Serial0.println("-- PS transition");
       }
     }
-    else
+    else if (pd_transition){
+      digitalWrite(LED_RED, 0);
+      //digitalWrite(DEBUG_PIN, 0);
+      pd_transition = 0;
+      Serial0.println("-- PS transition done");
+    }
+
+    static bool pd_power = 0;
+    if (PD_UFP.is_power_ready())
     {
-      if (pd_status != 3){
-      pd_status = 3;
-      Serial0.println("PD not ready");
+      if (not pd_power){
+        pd_power = 1;
+        Serial0.println("-- Power ready");
       }
     }
+    else if (pd_power){
+      pd_power = 0;
+      Serial0.println("-- Power not ready");
+    }
+    
     //delay(10);
-    digitalWrite(LED_RED, !digitalRead(LED_RED));  // Toggle LED state  
+    // digitalWrite(LED_RED, !digitalRead(LED_RED));  // Toggle LED state  
 }
 
 float mapValue(float ip, float ipmin, float ipmax, float tomin, float tomax)
